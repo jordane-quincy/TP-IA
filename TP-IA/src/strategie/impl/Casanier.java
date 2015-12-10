@@ -1,5 +1,10 @@
 package strategie.impl;
 
+import individu.Individu;
+
+import java.util.List;
+import java.util.Map;
+
 import strategie.StrategieI;
 
 /**
@@ -8,7 +13,8 @@ import strategie.StrategieI;
 public class Casanier implements StrategieI {
 
 	@Override
-	public boolean allerAuBar() {
+	public boolean allerAuBar(
+			final List<Map<Individu, Boolean>> historiqueDesTours) {
 		return false;
 	}
 

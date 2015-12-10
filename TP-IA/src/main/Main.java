@@ -16,8 +16,8 @@ import bar.Bar;
  */
 public class Main {
 
-	public static void main(final String[] args) {
-		checkNbArgs(args);
+	public static void main(final String[] args) throws Exception {
+		checkNbArgsOrThrowException(args);
 
 		int argNbPlacesDispo = 0;
 		int argNbTour = 0;
@@ -40,28 +40,51 @@ public class Main {
 
 			population.add(curPerson);
 		}
-		
-		Map<Integer, Boolean> infosCurTour = new HashMap<Integer, Boolean>();
+
+		final List<Map<Individu, Boolean>> historiqueDesTours = new ArrayList<Map<Individu, Boolean>>();
+		final Map<Individu, Boolean> infosCurTour = new HashMap<Individu, Boolean>();
 
 		for (int curTour = 1; curTour <= argNbTour; curTour++) {
 			bar.reset();
 
-			for(final Individu personne : population){
-				bar.choisiAllerAuBar(personne);
-				infosCurTour
+			for (final Individu personne : population) {
+				final boolean estAllerAuBar = bar.choisiAllerAuBar(personne,
+						historiqueDesTours);
+				infosCurTour.put(personne, estAllerAuBar);
 			}
-			
+
+			historiqueDesTours.add(infosCurTour);
 		}
 
+		afficherLesResultats(historiqueDesTours);
 	}
 
-	public static void checkNbArgs(final String[] args) {
+	private static void afficherLesResultats(
+			final List<Map<Individu, Boolean>> historiqueDesTours) {
+		int numeroTour = 0;
+		for (final Map<Individu, Boolean> curTour : historiqueDesTours) {
+			numeroTour++;
+			System.out.println("\tTour n°" + numeroTour);
+			for (final Individu curIndividu : curTour.keySet()) {
+				final boolean estAllerAuBarACeTour = curTour.get(curIndividu);
+
+				System.out.println("Individu n°" + curIndividu.getId() + " : "
+						+ estAllerAuBarACeTour);
+			}
+		}
+	}
+
+	public static void checkNbArgsOrThrowException(final String[] args)
+			throws Exception {
+		final StringBuilder msgErreur = new StringBuilder();
 		if (args == null || args.length != 3) {
-			System.err.println("Nombre d'arguments invalide.");
-			System.err.println("Format obligatoire :");
-			System.err.println("	nbPlacesDispo ");
-			System.err.println("	nbTour ");
-			System.err.println("	taillePopulation ");
+			msgErreur.append("Nombre d'arguments invalide.").append("\n");
+			msgErreur.append("Format obligatoire :").append("\n");
+			msgErreur.append("	nbPlacesDispo ").append("\n");
+			msgErreur.append("	nbTour ").append("\n");
+			msgErreur.append("	taillePopulation ");
+
+			throw new Exception(msgErreur.toString());
 		}
 	}
 

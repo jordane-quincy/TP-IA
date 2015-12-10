@@ -1,5 +1,8 @@
 package individu;
 
+import java.util.List;
+import java.util.Map;
+
 import strategie.StrategieI;
 
 /**
@@ -16,8 +19,15 @@ public class Individu {
 		this.strategie = strategie;
 	}
 
-	public boolean vaAuBar() {
-		return this.strategie.allerAuBar();
+	public boolean vaAuBar(final List<Map<Individu, Boolean>> historiqueDesTours) {
+		return this.strategie.allerAuBar(historiqueDesTours);
+	}
+
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return this.id;
 	}
 
 	@Override
@@ -36,4 +46,5 @@ public class Individu {
 
 		return true;
 	}
+
 }
