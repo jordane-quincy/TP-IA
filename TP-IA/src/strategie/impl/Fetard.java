@@ -10,7 +10,6 @@ public class Fetard implements StrategieI {
 	@Override
 	public boolean allerAuBar() {
 		return true;
-		//
 	}
 
 }
