@@ -5,11 +5,12 @@ import strategie.StrategieI;
 /**
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
-public class Mefiant implements StrategieI {
+public class Pavlovien implements StrategieI {
 
 	@Override
 	public boolean allerAuBar() {
-		//TODO je reste chez moi et ensuite je joue l'action que l'autre a joué
+		//Je reste chez moi et ensuite je fais la même action que les autres du coup précédent
 		return false;
 	}
+
 }

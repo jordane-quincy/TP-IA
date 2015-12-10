@@ -14,7 +14,9 @@ public class CycliqueTendanceCasanier implements StrategieI {
 	}
 
 	@Override
-	public boolean allerAuBar() {
+	public boolean allerAuBar(
+			final List<Map<Individu, Boolean>> historiqueDesTours) {
+				
 		// TODO Auto-generated method stub
 		return false;
 	}
