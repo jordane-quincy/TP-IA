@@ -1,5 +1,7 @@
 package individu;
 
+import strategie.StrategieI;
+
 /**
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
@@ -7,34 +9,31 @@ public class Individu {
 
 	int id;
 	int score;
-	
-	/**
-	 * @return the id
-	 */
-	public int getId() {
-		return id;
-	}
-	
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(int id) {
+	StrategieI strategie;
+
+	public Individu(final int id, final StrategieI strategie) {
 		this.id = id;
+		this.strategie = strategie;
 	}
-	
-	/**
-	 * Get the current score of this person.
-	 * @return the score
-	 */
-	public int getScore() {
-		return score;
+
+	public boolean vaAuBar() {
+		return this.strategie.allerAuBar();
 	}
-	
-	/**
-	 * @param score the score to set
-	 */
-	public void setScore(int score) {
-		this.score = score;
+
+	@Override
+	public boolean equals(final Object obj) {
+		if (obj == null) {
+			return false;
+		}
+		if (this.getClass() != obj.getClass()) {
+			return false;
+		}
+		final Individu autrePersonne = (Individu) obj;
+
+		if (this.id != autrePersonne.id) {
+			return false;
+		}
+
+		return true;
 	}
-	
 }

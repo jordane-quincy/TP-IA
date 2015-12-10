@@ -1,4 +1,6 @@
-package strategie;
+package strategie.impl;
+
+import strategie.StrategieI;
 
 /**
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
