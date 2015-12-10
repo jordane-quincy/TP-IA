@@ -9,8 +9,8 @@ public class Fetard implements StrategieI {
 
 	@Override
 	public boolean allerAuBar() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
+		//
 	}
 
 }
