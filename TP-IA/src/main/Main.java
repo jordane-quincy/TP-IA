@@ -63,6 +63,12 @@ public class Main {
 		afficherLesResultats(historiqueDesTours);
 	}
 
+	/**
+	 * Get a list of all classes which implement the interface
+	 * {@link StrategieI}
+	 * 
+	 * @return list of StrategieI
+	 */
 	private static List<StrategieI> getLstStrategieImpl() {
 		final List<StrategieI> lst = new ArrayList<StrategieI>();
 		lst.add(new Fetard());
@@ -73,13 +79,16 @@ public class Main {
 	private static void afficherLesResultats(
 			final List<Map<Individu, Boolean>> historiqueDesTours) {
 		int numeroTour = 0;
+		// We loop over all turn
 		for (final Map<Individu, Boolean> curTour : historiqueDesTours) {
 			numeroTour++;
-			System.out.println("\tTour n°" + numeroTour);
+			System.out.println("\tTour nï¿½" + numeroTour);
+
+			// On boucle sur l'ensemble des individus
 			for (final Individu curIndividu : curTour.keySet()) {
 				final boolean estAllerAuBarACeTour = curTour.get(curIndividu);
 
-				System.out.println("Individu n°" + curIndividu.getId() + "("
+				System.out.println("Individu nï¿½" + curIndividu.getId() + "("
 						+ curIndividu.getStrategieName() + ") : "
 						+ estAllerAuBarACeTour);
 			}
@@ -88,6 +97,7 @@ public class Main {
 
 	public static void checkNbArgsOrThrowException(final String[] args)
 			throws Exception {
+		// TODO: mettre les types des argumenst (int)
 		final StringBuilder msgErreur = new StringBuilder();
 		if (args == null || args.length != 3) {
 			msgErreur.append("Nombre d'arguments invalide.").append("\n");
