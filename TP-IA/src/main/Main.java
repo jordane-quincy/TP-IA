@@ -29,7 +29,7 @@ public class Main {
 			argNbTour = Integer.parseInt(args[1]);
 			argTaillePopulation = Integer.parseInt(args[2]);
 		} catch (final NumberFormatException nfe) {
-			System.err.println("Arguments non valides: " + nfe.getMessage());
+			throw new Exception("Arguments non valides: " + nfe.getMessage());
 		}
 
 		final List<StrategieI> lstStrategieImpl = getLstStrategieImpl();
@@ -82,13 +82,13 @@ public class Main {
 		// We loop over all turn
 		for (final Map<Individu, Boolean> curTour : historiqueDesTours) {
 			numeroTour++;
-			System.out.println("\tTour n�" + numeroTour);
+			System.out.println("\tTour n°" + numeroTour);
 
-			// On boucle sur l'ensemble des individus
+			// We loop over all turn persons
 			for (final Individu curIndividu : curTour.keySet()) {
 				final boolean estAllerAuBarACeTour = curTour.get(curIndividu);
 
-				System.out.println("Individu n�" + curIndividu.getId() + "("
+				System.out.println("Individu n°" + curIndividu.getId() + "("
 						+ curIndividu.getStrategieName() + ") : "
 						+ estAllerAuBarACeTour);
 			}

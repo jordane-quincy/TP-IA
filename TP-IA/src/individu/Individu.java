@@ -31,19 +31,28 @@ public class Individu {
 	}
 
 	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + this.id;
+		return result;
+	}
+
+	@Override
 	public boolean equals(final Object obj) {
+		if (this == obj) {
+			return true;
+		}
 		if (obj == null) {
 			return false;
 		}
 		if (this.getClass() != obj.getClass()) {
 			return false;
 		}
-		final Individu autrePersonne = (Individu) obj;
-
-		if (this.id != autrePersonne.id) {
+		final Individu other = (Individu) obj;
+		if (this.id != other.id) {
 			return false;
 		}
-
 		return true;
 	}
 
