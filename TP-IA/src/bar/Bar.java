@@ -22,10 +22,10 @@ public class Bar {
 			final List<Map<Individu, Boolean>> historiqueDesTours) {
 		final boolean vaAuBar = i.vaAuBar(historiqueDesTours);
 		if (vaAuBar) {
-			i.mettreAJourLeScore(barPlein);
-
 			this.listDesIndividusPresents.add(i);
 		}
+
+		i.mettreAJourLeScore(vaAuBar, this.barPlein());
 
 		return vaAuBar;
 	}

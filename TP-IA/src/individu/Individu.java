@@ -11,7 +11,7 @@ import strategie.StrategieI;
 public class Individu {
 
 	int id;
-	int score;
+	int score = 0;
 	StrategieI strategie;
 
 	public Individu(final int id, final StrategieI strategie) {
@@ -47,4 +47,11 @@ public class Individu {
 		return true;
 	}
 
+	public void mettreAJourLeScore(final boolean vaAuBar, final boolean barPlein) {
+
+	}
+
+	public String getStrategieName() {
+		return this.strategie.getClass().getSimpleName();
+	}
 }

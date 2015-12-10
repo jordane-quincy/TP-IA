@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import strategie.StrategieI;
+import strategie.impl.Casanier;
 import strategie.impl.Fetard;
 import bar.Bar;
 
@@ -31,11 +32,14 @@ public class Main {
 			System.err.println("Arguments non valides: " + nfe.getMessage());
 		}
 
+		final List<StrategieI> lstStrategieImpl = getLstStrategieImpl();
+
 		final Bar bar = new Bar(argNbPlacesDispo);
 
 		final List<Individu> population = new ArrayList<Individu>();
 		for (int i = 0; i < argTaillePopulation; i++) {
-			final StrategieI strategie = new Fetard();
+			final StrategieI strategie = lstStrategieImpl.get(i
+					% lstStrategieImpl.size());
 			final Individu curPerson = new Individu(i, strategie);
 
 			population.add(curPerson);
@@ -59,6 +63,13 @@ public class Main {
 		afficherLesResultats(historiqueDesTours);
 	}
 
+	private static List<StrategieI> getLstStrategieImpl() {
+		final List<StrategieI> lst = new ArrayList<StrategieI>();
+		lst.add(new Fetard());
+		lst.add(new Casanier());
+		return lst;
+	}
+
 	private static void afficherLesResultats(
 			final List<Map<Individu, Boolean>> historiqueDesTours) {
 		int numeroTour = 0;
@@ -68,7 +79,8 @@ public class Main {
 			for (final Individu curIndividu : curTour.keySet()) {
 				final boolean estAllerAuBarACeTour = curTour.get(curIndividu);
 
-				System.out.println("Individu n°" + curIndividu.getId() + " : "
+				System.out.println("Individu n°" + curIndividu.getId() + "("
+						+ curIndividu.getStrategieName() + ") : "
 						+ estAllerAuBarACeTour);
 			}
 		}
