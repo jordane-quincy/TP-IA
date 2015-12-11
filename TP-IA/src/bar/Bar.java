@@ -7,14 +7,45 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * Bar class, following the multithread Singleton design pattern.
+ * 
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
 public class Bar {
 
-	int nbPlacesDisponibles;
-	List<Individu> listDesIndividusPresents = new ArrayList<Individu>();
+	// singleton
+	private static Bar uniqueInstance;
 
-	public Bar(final int nbPlacesDisponibles) {
+	private final int nbPlacesDisponibles;
+	private final List<Individu> listDesIndividusPresents = new ArrayList<Individu>();
+
+	/**
+	 * Return the unique instance of the Bar.
+	 * 
+	 * @param nbPlacesDisponibles
+	 * @return the Bar
+	 */
+	public static synchronized Bar getInstance(final int nbPlacesDisponibles) {
+		if (uniqueInstance == null) {
+			uniqueInstance = new Bar(nbPlacesDisponibles);
+		}
+		return uniqueInstance;
+	}
+
+	/**
+	 * Override clone method because we must use getInstance to get the bar.
+	 */
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		throw new CloneNotSupportedException();
+	}
+
+	/**
+	 * The "real" constructor.
+	 * 
+	 * @param nbPlacesDisponibles
+	 */
+	private Bar(final int nbPlacesDisponibles) {
 		this.nbPlacesDisponibles = nbPlacesDisponibles;
 	}
 

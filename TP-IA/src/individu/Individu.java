@@ -30,6 +30,9 @@ public class Individu {
 		return this.id;
 	}
 
+	/**
+	 * To be sure of the order of Individu in Collections.
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;

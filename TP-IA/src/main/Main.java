@@ -34,7 +34,8 @@ public class Main {
 
 		final List<StrategieI> lstStrategieImpl = getLstStrategieImpl();
 
-		final Bar bar = new Bar(argNbPlacesDispo);
+		final Bar bar = Bar.getInstance(argNbPlacesDispo); // new
+															// Bar(argNbPlacesDispo);
 
 		final List<Individu> population = new ArrayList<Individu>();
 		for (int i = 0; i < argTaillePopulation; i++) {
