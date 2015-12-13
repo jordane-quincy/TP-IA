@@ -1,15 +1,17 @@
 package main;
 
 import individu.Individu;
+import individu.IndividuFactory;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Calendar;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import strategie.StrategieI;
-import strategie.impl.Casanier;
-import strategie.impl.Fetard;
+import stats.Stats;
+import tournament.TournamentI;
+import tournament.impl.TournamentLowestStrategyToHighestStrategy;
 import bar.Bar;
 
 /**
@@ -32,73 +34,93 @@ public class Main {
 			throw new Exception("Arguments non valides: " + nfe.getMessage());
 		}
 
-		final List<StrategieI> lstStrategieImpl = getLstStrategieImpl();
+		System.out.println("Depart : " + Calendar.getInstance().getTime());
 
-		final Bar bar = Bar.getInstance(argNbPlacesDispo); // new
-															// Bar(argNbPlacesDispo);
+		final Bar bar = Bar.getInstance(argNbPlacesDispo);
 
-		final List<Individu> population = new ArrayList<Individu>();
-		for (int i = 0; i < argTaillePopulation; i++) {
-			final StrategieI strategie = lstStrategieImpl.get(i
-					% lstStrategieImpl.size());
-			final Individu curPerson = new Individu(i, strategie);
+		final List<Individu> population = IndividuFactory
+				.generatePopulation(argTaillePopulation);
 
-			population.add(curPerson);
-		}
+		final TournamentI tournament = new TournamentLowestStrategyToHighestStrategy();
 
 		final List<Map<Individu, Boolean>> historiqueDesTours = new ArrayList<Map<Individu, Boolean>>();
-		final Map<Individu, Boolean> infosCurTour = new HashMap<Individu, Boolean>();
+		// LinkedHashMap preserve the order
+		final Map<Individu, Boolean> infosCurTour = new LinkedHashMap<Individu, Boolean>();
 
 		for (int curTour = 1; curTour <= argNbTour; curTour++) {
 			bar.reset();
 
+			System.out.println("\tTour " + curTour);
+
 			for (final Individu personne : population) {
-				final boolean estAllerAuBar = bar.choisiAllerAuBar(personne,
+				final boolean estPartiAuBar = bar.choisiAllerAuBar(personne,
 						historiqueDesTours);
-				infosCurTour.put(personne, estAllerAuBar);
+				infosCurTour.put(personne, estPartiAuBar);
+
+				System.out.println(personne);
 			}
 
 			historiqueDesTours.add(infosCurTour);
+
+			if (curTour >= 5) {
+				tournament.evolution(population, historiqueDesTours);
+			}
 		}
 
-		afficherLesResultats(historiqueDesTours);
+		afficherLesResultatsDuDernierTour(historiqueDesTours);
+
+		afficherLesStatistiquesParIndividu(population, historiqueDesTours);
+
+		Stats.logStat(population);
 	}
 
-	/**
-	 * Get a list of all classes which implement the interface
-	 * {@link StrategieI}
-	 * 
-	 * @return list of StrategieI
-	 */
-	private static List<StrategieI> getLstStrategieImpl() {
-		final List<StrategieI> lst = new ArrayList<StrategieI>();
-		lst.add(new Fetard());
-		lst.add(new Casanier());
-		return lst;
-	}
-
-	private static void afficherLesResultats(
+	private static void afficherLesResultatsDuDernierTour(
 			final List<Map<Individu, Boolean>> historiqueDesTours) {
-		int numeroTour = 0;
-		// We loop over all turn
-		for (final Map<Individu, Boolean> curTour : historiqueDesTours) {
-			numeroTour++;
-			System.out.println("\tTour n°" + numeroTour);
+		final Map<Individu, Boolean> resultatDernierTour = historiqueDesTours
+				.get(historiqueDesTours.size() - 1);
 
-			// We loop over all turn persons
-			for (final Individu curIndividu : curTour.keySet()) {
-				final boolean estAllerAuBarACeTour = curTour.get(curIndividu);
+		System.out.println("\tResultat du dernier tour");
+		// We loop over all persons
+		for (final Individu curIndividu : resultatDernierTour.keySet()) {
+			final boolean estAllerAuBarACeTour = resultatDernierTour
+					.get(curIndividu);
 
-				System.out.println("Individu n°" + curIndividu.getId() + "("
-						+ curIndividu.getStrategieName() + ") : "
-						+ estAllerAuBarACeTour);
+			System.out.println(curIndividu + ", " + estAllerAuBarACeTour);
+		}
+
+	}
+
+	private static void afficherLesStatistiquesParIndividu(
+			final List<Individu> population,
+			final List<Map<Individu, Boolean>> historiqueDesTours) {
+
+		System.out.println("\tStatistiques par individu");
+
+		for (final Individu curIndividu : population) {
+			int nbFoisAuBar = 0;
+			for (final Map<Individu, Boolean> tour : historiqueDesTours) {
+				final boolean estPartiAuBar = tour.get(curIndividu);
+				if (estPartiAuBar) {
+					nbFoisAuBar++;
+				}
 			}
+
+			System.out.print(curIndividu.getId() + "("
+					+ curIndividu.getStrategieName() + ")" + " : "
+					+ nbFoisAuBar + " = " + curIndividu.getScore()
+					+ " (gagne en moyenne ");
+			System.out
+					.format("%.3f ",
+							(double) curIndividu.getScore()
+									/ (historiqueDesTours.size() > 0 ? historiqueDesTours
+											.size() : 1));
+			System.out.println("points par tour)");
 		}
 	}
 
 	public static void checkNbArgsOrThrowException(final String[] args)
 			throws Exception {
-		// TODO: mettre les types des argumenst (int)
+		// TODO: mettre les types des arguments (int)
 		final StringBuilder msgErreur = new StringBuilder();
 		if (args == null || args.length != 3) {
 			msgErreur.append("Nombre d'arguments invalide.").append("\n");
@@ -110,5 +132,4 @@ public class Main {
 			throw new Exception(msgErreur.toString());
 		}
 	}
-
 }

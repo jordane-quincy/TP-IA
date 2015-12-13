@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import strategie.StrategieI;
+import strategie.impl.Cyclique;
 
 /**
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
@@ -20,7 +21,7 @@ public class Individu {
 	}
 
 	public boolean vaAuBar(final List<Map<Individu, Boolean>> historiqueDesTours) {
-		return this.strategie.allerAuBar(historiqueDesTours);
+		return this.strategie.allerAuBar(this, historiqueDesTours);
 	}
 
 	/**
@@ -28,6 +29,13 @@ public class Individu {
 	 */
 	public int getId() {
 		return this.id;
+	}
+
+	/**
+	 * @return the score
+	 */
+	public int getScore() {
+		return this.score;
 	}
 
 	/**
@@ -60,10 +68,43 @@ public class Individu {
 	}
 
 	public void mettreAJourLeScore(final boolean vaAuBar, final boolean barPlein) {
+		int pointGagne = 0;
+		if (vaAuBar) {
+			pointGagne = barPlein ? 0 : 2;
+		} else {
+			pointGagne = 1;
+		}
 
+		System.out.println(this.id + " maj score : " + this.score + " + "
+				+ pointGagne);
+
+		this.score += pointGagne;
 	}
 
 	public String getStrategieName() {
 		return this.strategie.getClass().getSimpleName();
+	}
+
+	/**
+	 * During the Tournoi, the lowest score will took the strategy of the person
+	 * with the highest score.
+	 * 
+	 * @param i
+	 *            an Individu
+	 */
+	public void takeTheStrategieOf(final Individu i) {
+		this.strategie = i.strategie;
+	}
+
+	@Override
+	public String toString() {
+
+		String i = "";
+		if (this.strategie instanceof Cyclique) {
+			i = " [" + String.valueOf(((Cyclique) this.strategie).getI()) + "]";
+		}
+
+		return "Individu n°" + this.id + "(" + this.getStrategieName() + i
+				+ ") : " + this.score + " point" + (this.score > 1 ? "s" : "");
 	}
 }

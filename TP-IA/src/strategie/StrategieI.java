@@ -12,5 +12,6 @@ import java.util.Map;
  */
 public interface StrategieI {
 
-	boolean allerAuBar(List<Map<Individu, Boolean>> historiqueDesTours);
+	boolean allerAuBar(Individu moi,
+			List<Map<Individu, Boolean>> historiqueDesTours);
 }

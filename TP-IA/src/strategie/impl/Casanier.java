@@ -13,7 +13,7 @@ import strategie.StrategieI;
 public class Casanier implements StrategieI {
 
 	@Override
-	public boolean allerAuBar(
+	public boolean allerAuBar(final Individu moi,
 			final List<Map<Individu, Boolean>> historiqueDesTours) {
 		return false;
 	}

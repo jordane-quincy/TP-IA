@@ -66,6 +66,10 @@ public class Bar {
 	}
 
 	private boolean barPlein() {
-		return this.nbPlacesDisponibles >= this.listDesIndividusPresents.size();
+		System.out
+				.println(this.nbPlacesDisponibles < this.listDesIndividusPresents
+						.size() ? "barPlein" : "place(s) dispo");
+
+		return this.nbPlacesDisponibles < this.listDesIndividusPresents.size();
 	}
 }

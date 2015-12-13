@@ -4,6 +4,7 @@ import individu.Individu;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 import strategie.StrategieI;
 
@@ -12,12 +13,14 @@ import strategie.StrategieI;
  * 
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
-public class Fetard implements StrategieI {
+public class Lunatique implements StrategieI {
 
 	@Override
 	public boolean allerAuBar(final Individu moi,
 			final List<Map<Individu, Boolean>> historiqueDesTours) {
-		return true;
+		// je lance une pièce de monnaie et je choisis l’action (probabilité des
+		// actions de 0,5)
+		return new Random().nextBoolean();
 	}
 
 }
