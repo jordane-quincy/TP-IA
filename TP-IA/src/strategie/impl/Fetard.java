@@ -14,6 +14,15 @@ import strategie.StrategieI;
  */
 public class Fetard implements StrategieI {
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A Fetard always go to the bar.
+	 * </pre>
+	 */
 	@Override
 	public boolean allerAuBar(final Individu moi,
 			final List<Map<Individu, Boolean>> historiqueDesTours) {

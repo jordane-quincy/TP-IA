@@ -15,6 +15,15 @@ import strategie.StrategieI;
  */
 public class Lunatique implements StrategieI {
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A Lunatique has 50 percent change to go to the bar.
+	 * </pre>
+	 */
 	@Override
 	public boolean allerAuBar(final Individu moi,
 			final List<Map<Individu, Boolean>> historiqueDesTours) {

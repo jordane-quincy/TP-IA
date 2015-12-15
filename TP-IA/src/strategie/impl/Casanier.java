@@ -12,6 +12,15 @@ import strategie.StrategieI;
  */
 public class Casanier implements StrategieI {
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A Casanier always stay at home.
+	 * </pre>
+	 */
 	@Override
 	public boolean allerAuBar(final Individu moi,
 			final List<Map<Individu, Boolean>> historiqueDesTours) {

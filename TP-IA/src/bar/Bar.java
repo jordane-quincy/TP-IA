@@ -49,6 +49,15 @@ public class Bar {
 		this.nbPlacesDisponibles = nbPlacesDisponibles;
 	}
 
+	/**
+	 * Add the person (or not) to the bar according to his/her strategy.
+	 * 
+	 * @param i
+	 *            a person
+	 * @param historiqueDesTours
+	 *            the List of all previous turn informations
+	 * @return true if the person go to the bar, false otherwise
+	 */
 	public boolean choisiAllerAuBar(final Individu i,
 			final List<Map<Individu, Boolean>> historiqueDesTours) {
 		final boolean vaAuBar = i.vaAuBar(historiqueDesTours);
@@ -56,19 +65,36 @@ public class Bar {
 			this.listDesIndividusPresents.add(i);
 		}
 
-		i.mettreAJourLeScore(vaAuBar, this.barPlein());
-
 		return vaAuBar;
 	}
 
+	/**
+	 * Clean the bar to get ready for a new week of happy hours.
+	 */
 	public void reset() {
+		// All drunk people have to leave to bar.
 		this.listDesIndividusPresents.clear();
+		// Vaccum cleaner robot are amazing !
+		this.runTheAutoCleaningRobot();
 	}
 
-	private boolean barPlein() {
-		System.out
-				.println(this.nbPlacesDisponibles < this.listDesIndividusPresents
-						.size() ? "barPlein" : "place(s) dispo");
+	/**
+	 * Because we are in IA.
+	 */
+	public void runTheAutoCleaningRobot() {
+		// TODO : No time to create a real robot with a start/stop feature
+		// remotely controlled, sorry :-/
+	}
+
+	/**
+	 * Determine if too many people went to the bar this week.
+	 * 
+	 * @return true if the bar is full, false otherwise
+	 */
+	public boolean isBarPlein() {
+		// System.out.println(this.nbPlacesDisponibles <
+		// this.listDesIndividusPresents.size() ? "barPlein" :
+		// "place(s) dispo");
 
 		return this.nbPlacesDisponibles < this.listDesIndividusPresents.size();
 	}

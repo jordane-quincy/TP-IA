@@ -11,6 +11,9 @@ import java.util.Map;
 public class CycliqueTendanceFetard extends Cyclique {
 
 	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
 	 * A CycliqueTendanceFetard
 	 * 
 	 * <pre>

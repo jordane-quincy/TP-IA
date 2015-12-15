@@ -4,7 +4,6 @@ import individu.Individu;
 import individu.IndividuFactory;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -34,8 +33,6 @@ public class Main {
 			throw new Exception("Arguments non valides: " + nfe.getMessage());
 		}
 
-		System.out.println("Depart : " + Calendar.getInstance().getTime());
-
 		final Bar bar = Bar.getInstance(argNbPlacesDispo);
 
 		final List<Individu> population = IndividuFactory
@@ -61,6 +58,11 @@ public class Main {
 			}
 
 			historiqueDesTours.add(infosCurTour);
+
+			for (final Individu i : infosCurTour.keySet()) {
+				final boolean vaAuBar = infosCurTour.get(i);
+				i.mettreAJourLeScore(vaAuBar, bar.isBarPlein());
+			}
 
 			if (curTour >= 5) {
 				tournament.evolution(population, historiqueDesTours);
@@ -125,9 +127,9 @@ public class Main {
 		if (args == null || args.length != 3) {
 			msgErreur.append("Nombre d'arguments invalide.").append("\n");
 			msgErreur.append("Format obligatoire :").append("\n");
-			msgErreur.append("	nbPlacesDispo ").append("\n");
-			msgErreur.append("	nbTour ").append("\n");
-			msgErreur.append("	taillePopulation ");
+			msgErreur.append(
+					"	nbPlacesDispo(int) nbTour(int) taillePopulation(int)")
+					.append("\n");
 
 			throw new Exception(msgErreur.toString());
 		}
