@@ -11,6 +11,7 @@ import strategie.impl.CycliqueTendanceFetard;
 import strategie.impl.Fetard;
 import strategie.impl.Lunatique;
 import strategie.impl.MajorMou;
+import strategie.impl.Mefiant;
 import strategie.impl.Pavlovien;
 import strategie.impl.Sondeur;
 
@@ -54,13 +55,14 @@ public final class IndividuFactory {
 	 */
 	private static List<StrategieI> getLstStrategieImpl() {
 		final List<StrategieI> lst = new ArrayList<StrategieI>();
-		lst.add(new Fetard());
 		lst.add(new Casanier());
 		lst.add(new CycliqueTendanceFetard());
 		lst.add(new CycliqueTendanceCasanier());
-		lst.add(new MajorMou());
-		lst.add(new Pavlovien());
+		lst.add(new Fetard());
 		lst.add(new Lunatique());
+		lst.add(new MajorMou());
+		lst.add(new Mefiant());
+		lst.add(new Pavlovien());
 		lst.add(new Sondeur());
 		return lst;
 	}
