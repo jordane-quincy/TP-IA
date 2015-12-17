@@ -28,10 +28,10 @@ public class Sondeur implements StrategieI {
 
 			int nbTotalPersonAtTheBar = 0;
 			int nbTotalPerson = 0;
-			final Map<Person, Boolean> tour = historiqueDesTours
+			final Map<Person, Boolean> turn = historiqueDesTours
 					.get(historiqueDesTours.size() - 1);
-			for (final Person i : tour.keySet()) {
-				final boolean estPartiAuBar = tour.get(i);
+			for (final Person i : turn.keySet()) {
+				final boolean estPartiAuBar = turn.get(i);
 				if (estPartiAuBar) {
 					nbTotalPersonAtTheBar++;
 				}

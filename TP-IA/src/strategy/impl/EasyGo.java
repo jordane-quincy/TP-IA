@@ -5,25 +5,14 @@ import java.util.Map;
 
 import person.Person;
 import strategy.StrategieI;
-import bar.Bar;
 
 /**
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
 public class EasyGo implements StrategieI {
 
-	/**
-	 * <p>
-	 * {@inheritDoc}
-	 * </p>
-	 * 
-	 * <pre>
-	 * A EasyGo stay at home at first turn.
-	 * After that, he/she check if the bar was full during the previous turn :
-	 * 	if yes, he/she stay at home,
-	 * 	otherwise he/she goes to the bar.
-	 * </pre>
-	 */
+	boolean hasBeenBetrayed = false;
+
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
@@ -31,25 +20,29 @@ public class EasyGo implements StrategieI {
 		// interessant
 		// d’aller au bar, je décide d’aller au bar.
 
-		final int nbTour = turnHistoric.size();
-		if (nbTour < 1) {
+		final int nbTurn = turnHistoric.size();
+		if (nbTurn < 1) {
 			// Go to the bar at first round
 			return true;
 		} else {
 
-			// Bar.getInstance(0) because the arg will not be really used (the
-			// bar was already initialized in the main)
-			final boolean barWasFullAtTheLastTurn = Bar.getInstance(0)
-					.getBarState(nbTour - 1);
+			// if he has never been betrayed
+			if (!this.hasBeenBetrayed) {
 
-			if (barWasFullAtTheLastTurn) {
-				// Stay at home
-				return false;
+				// expected to get 2 points each turn
+				final int scoreExpectedIfEachTurnWeGoToANonFullBarEveryTurn = nbTurn * 2;
+				if (me.getScore() == scoreExpectedIfEachTurnWeGoToANonFullBarEveryTurn) {
+					// the bar was never full
+					return true;
+				} else {
+					// we have been betrayed :-(
+					this.hasBeenBetrayed = true;
+					return false;
+				}
 			} else {
-				// Go to the bar
-				return true;
+				// never forget : betrayed one time == stay at home forever
+				return false;
 			}
-
 		}
 	}
 }

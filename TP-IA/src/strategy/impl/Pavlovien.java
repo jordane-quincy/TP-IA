@@ -14,7 +14,7 @@ public class Pavlovien implements StrategieI {
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
-		// Je reste chez me et ensuite je fais la même action que les autres du
+		// Je reste chez moi et ensuite je fais la même action que les autres du
 		// coup précédent
 
 		final int nbTurn = turnHistoric.size();
