@@ -5,13 +5,12 @@ import java.util.Map;
 
 import person.Person;
 import strategy.StrategieI;
+import bar.Bar;
 
 /**
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
 public class EasyGo implements StrategieI {
-
-	boolean hasBeenBetrayed = false;
 
 	@Override
 	public boolean goToTheBar(final Person me,
@@ -26,23 +25,19 @@ public class EasyGo implements StrategieI {
 			return true;
 		} else {
 
-			// if he has never been betrayed
-			if (!this.hasBeenBetrayed) {
+			// Bar.getInstance(0) because the arg will not be really used (the
+			// bar was already initialized in the main)
+			final boolean barWasFullAtTheLastTurn = Bar.getInstance(0)
+					.getBarState(nbTour - 1);
 
-				// expected to get 2 points each turn
-				final int scoreExpectedIfEachTurnWeGoToANonFullBarEveryTurn = nbTour * 2;
-				if (me.getScore() == scoreExpectedIfEachTurnWeGoToANonFullBarEveryTurn) {
-					// the bar was never full
-					return true;
-				} else {
-					// we have been betrayed :-(
-					this.hasBeenBetrayed = true;
-					return false;
-				}
-			} else {
-				// never forget : betrayed one time == stay at home forever
+			if (barWasFullAtTheLastTurn) {
+				// Stay at home
 				return false;
+			} else {
+				// Go to the bar
+				return true;
 			}
+
 		}
 	}
 }
