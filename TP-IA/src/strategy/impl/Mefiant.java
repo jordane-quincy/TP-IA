@@ -31,17 +31,17 @@ public class Mefiant implements StrategieI {
 				idOfPersonNearMe = me.getId() - 1;
 			}
 
-			boolean autreEstPartiAuBar = false;
-			final Map<Person, Boolean> tour = turnHistoric
+			boolean personNearMeGoToTheBar = false;
+			final Map<Person, Boolean> turn = turnHistoric
 					.get(turnHistoric.size() - 1);
-			for (final Person i : tour.keySet()) {
+			for (final Person i : turn.keySet()) {
 				if (i.getId() == idOfPersonNearMe) {
-					autreEstPartiAuBar = tour.get(i);
+					personNearMeGoToTheBar = turn.get(i);
 					break;// no need to continue to loop
 				}
 			}
 
-			return autreEstPartiAuBar;
+			return personNearMeGoToTheBar;
 		}
 	}
 }
