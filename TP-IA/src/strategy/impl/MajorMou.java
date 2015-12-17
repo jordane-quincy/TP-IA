@@ -17,38 +17,38 @@ public class MajorMou implements StrategieI {
 		// TODO Je reste chez me et ensuite je joue l'aciton que les autres ont
 		// joués majoritairement sur tous les coups précédents
 
-		final int nbTour = turnHistoric.size();
-		if (nbTour < 1) {
+		final int nbTurn = turnHistoric.size();
+		if (nbTurn < 1) {
 			// Stay at home at first round
 			return false;
 		} else {
 
-			int nbInviduAuBarTotal = 0;
-			int nbInviduTotal = 0;
-			for (final Map<Person, Boolean> tour : turnHistoric) {
-				for (final Person i : tour.keySet()) {
-					final boolean estPartiAuBar = tour.get(i);
-					if (estPartiAuBar) {
-						nbInviduAuBarTotal++;
+			int nbTotalPersonInTheBar = 0;
+			int nbTotalPerson = 0;
+			for (final Map<Person, Boolean> turn : turnHistoric) {
+				for (final Person i : turn.keySet()) {
+					final boolean wentToTheBar = turn.get(i);
+					if (wentToTheBar) {
+						nbTotalPersonInTheBar++;
 					}
-					nbInviduTotal++;
+					nbTotalPerson++;
 				}
 			}
 
-			final double ratioNbPersonAuBarSurNbPersonParTour = (double) nbInviduTotal
-					/ nbInviduAuBarTotal / (turnHistoric.size() + 1);
+			final double rationNbPersonInTheBarOnNbPersonPerTurn = (double) nbTotalPerson
+					/ nbTotalPersonInTheBar / (turnHistoric.size() + 1);
 			System.out
-					.print("( nbInviduTotal /  nbInviduAuBarTotal) / turnHistoric.size() = ("
-							+ nbInviduTotal
+					.print("( nbTotalPerson /  nbTotalPersonInTheBar) / turnHistoric.size() = ("
+							+ nbTotalPerson
 							+ "/"
-							+ nbInviduAuBarTotal
+							+ nbTotalPersonInTheBar
 							+ ")/"
 							+ (turnHistoric.size() + 1) + ") = ");
 			System.out.format("%.3f : ",
-					ratioNbPersonAuBarSurNbPersonParTour);
+					rationNbPersonInTheBarOnNbPersonPerTurn);
 			System.out
-					.println(ratioNbPersonAuBarSurNbPersonParTour >= 0.5d);
-			return ratioNbPersonAuBarSurNbPersonParTour >= 0.5d;
+					.println(rationNbPersonInTheBarOnNbPersonPerTurn >= 0.5d);
+			return rationNbPersonInTheBarOnNbPersonPerTurn >= 0.5d;
 		}
 	}
 }

@@ -16,26 +16,26 @@ public class Mefiant implements StrategieI {
 			final List<Map<Person, Boolean>> turnHistoric) {
 		// TODO je reste chez me et ensuite je joue l'action que l'autre a joué
 
-		final int nbTour = turnHistoric.size();
-		if (nbTour < 1) {
+		final int nbTurn = turnHistoric.size();
+		if (nbTurn < 1) {
 			// Stay at home at first round
 			return false;
 		} else {
-			int idAutreATrouver = 0;
+			int idOfPersonNearMe = 0;
 			if (me.getId() == 0) {
 				// l'autre == celui qui a l'id juste apres comme il n'y a
 				// personne avant
-				idAutreATrouver = 1;
+				idOfPersonNearMe = 1;
 			} else {
 				// l'autre == celui qui a l'id juste avant
-				idAutreATrouver = me.getId() - 1;
+				idOfPersonNearMe = me.getId() - 1;
 			}
 
 			boolean autreEstPartiAuBar = false;
 			final Map<Person, Boolean> tour = turnHistoric
 					.get(turnHistoric.size() - 1);
 			for (final Person i : tour.keySet()) {
-				if (i.getId() == idAutreATrouver) {
+				if (i.getId() == idOfPersonNearMe) {
 					autreEstPartiAuBar = tour.get(i);
 					break;// no need to continue to loop
 				}
