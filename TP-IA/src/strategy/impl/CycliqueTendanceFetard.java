@@ -11,12 +11,8 @@ import person.Person;
 public class CycliqueTendanceFetard extends Cyclique {
 
 	/**
-	 * <p>
-	 * {@inheritDoc}
-	 * </p>
-	 * 
 	 * A CycliqueTendanceFetard
-	 * 
+	 *
 	 * <pre>
 	 * Example with i = 3 :
 	 * 	Turn 1 = Go to the bar
@@ -31,6 +27,6 @@ public class CycliqueTendanceFetard extends Cyclique {
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> historiqueDesTours) {
-		return this.haveToGoToTheBarAtThisTurn(historiqueDesTours);
+		return this.haveToGoToTheBar(historiqueDesTours);
 	}
 }

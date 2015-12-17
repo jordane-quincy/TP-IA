@@ -26,12 +26,12 @@ public abstract class Cyclique implements StrategieI {
 	/**
 	 * Periodic people choose to do something one time and the opposite during X
 	 * turn.
-	 * 
+	 *
 	 * @param turnHistoric
 	 * @return
 	 */
 	// used only by sub classes
-	protected boolean haveToGoToTheBarAtThisTurn(
+	protected boolean haveToGoToTheBar(
 			final List<Map<Person, Boolean>> turnHistoric) {
 		return turnHistoric.size() % this.i == 0;
 	}
