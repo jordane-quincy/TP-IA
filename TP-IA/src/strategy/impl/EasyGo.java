@@ -12,6 +12,18 @@ import bar.Bar;
  */
 public class EasyGo implements StrategieI {
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A EasyGo stay at home at first turn.
+	 * After that, he/she check if the bar was full during the previous turn :
+	 * 	if yes, he/she stay at home,
+	 * 	otherwise he/she goes to the bar.
+	 * </pre>
+	 */
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {

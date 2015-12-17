@@ -11,6 +11,10 @@ import person.Person;
 public class CycliqueTendanceFetard extends Cyclique {
 
 	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
 	 * A CycliqueTendanceFetard
 	 * 
 	 * <pre>
