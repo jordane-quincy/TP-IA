@@ -1,11 +1,10 @@
-package strategie.impl;
-
-import individu.Person;
+package strategy.impl;
 
 import java.util.List;
 import java.util.Map;
 
-import strategie.StrategieI;
+import person.Person;
+import strategy.StrategieI;
 
 /**
  * Not recommended behavior in real life : always go to the bar.

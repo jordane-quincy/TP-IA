@@ -1,11 +1,10 @@
-package strategie.impl;
-
-import individu.Person;
+package strategy.impl;
 
 import java.util.List;
 import java.util.Map;
 
-import strategie.StrategieI;
+import person.Person;
+import strategy.StrategieI;
 
 /**
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
@@ -19,6 +18,9 @@ public abstract class Cyclique implements StrategieI {
 		this.i = 1 + (int) (Math.random() * 3);
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	// Must be implemented in sub classes.
 	@Override
 	public abstract boolean goToTheBar(Person me,
@@ -27,7 +29,7 @@ public abstract class Cyclique implements StrategieI {
 	/**
 	 * Periodic people choose to do something one time and the opposite during X
 	 * turn.
-	 *
+	 * 
 	 * @param turnHistoric
 	 * @return
 	 */

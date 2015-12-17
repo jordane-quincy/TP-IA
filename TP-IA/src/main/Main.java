@@ -1,13 +1,12 @@
 package main;
 
-import individu.Person;
-import individu.PersonFactory;
-
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import person.Person;
+import person.PersonFactory;
 import stats.Stats;
 import tournament.TournamentI;
 import tournament.impl.TournamentLowestStrategyToHighestStrategy;

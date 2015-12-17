@@ -1,4 +1,4 @@
-package individu;
+package person;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,20 +17,19 @@ import strategy.impl.Sondeur;
 
 /**
  * PersonFactory class, following the Factory design pattern.
- *
+ * 
  * @author DURIEZ Jean-Baptiste and QUINCY Jordane
  */
 public final class PersonFactory {
 
 	/**
 	 * Return a generated population of {@link Person}.
-	 *
+	 * 
 	 * @param inputPopulationSize
 	 *            the size of the population needed.
 	 * @return the list of {@link Person} generated.
 	 */
-	public static List<Person> generatePopulation(
-			final int inputPopulationSize) {
+	public static List<Person> generatePopulation(final int inputPopulationSize) {
 
 		final List<StrategieI> lstStrategyImpl = getLstStrategyImpl();
 
@@ -50,7 +49,7 @@ public final class PersonFactory {
 	/**
 	 * Get a list of all classes which implement the interface
 	 * {@link StrategieI}
-	 *
+	 * 
 	 * @return list of {@link StrategieI}
 	 */
 	private static List<StrategieI> getLstStrategyImpl() {

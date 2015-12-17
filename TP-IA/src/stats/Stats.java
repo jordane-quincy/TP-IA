@@ -1,7 +1,5 @@
 package stats;
 
-import individu.Person;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,7 +7,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import strategie.StrategieI;
+import person.Person;
+import strategy.StrategieI;
 
 public class Stats {
 

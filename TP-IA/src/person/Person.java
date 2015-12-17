@@ -1,10 +1,10 @@
-package Person;
+package person;
 
 import java.util.List;
 import java.util.Map;
 
-import strategie.StrategieI;
-import strategie.impl.Cyclique;
+import strategy.StrategieI;
+import strategy.impl.Cyclique;
 import tournament.TournamentI;
 
 /**
@@ -37,8 +37,9 @@ public class Person {
 	 *            the List of all previous turn infos
 	 * @return true if the person go to the bar, false otherwise
 	 */
-	public boolean vaAuBar(final List<Map<Person, Boolean>> historiqueDesTours) {
-		return this.strategie.allerAuBar(this, historiqueDesTours);
+	public boolean goToTheBar(
+			final List<Map<Person, Boolean>> historiqueDesTours) {
+		return this.strategie.goToTheBar(this, historiqueDesTours);
 	}
 
 	/**

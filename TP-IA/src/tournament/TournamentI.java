@@ -1,9 +1,9 @@
 package tournament;
 
-import individu.Person;
-
 import java.util.List;
 import java.util.Map;
+
+import person.Person;
 
 public interface TournamentI {
 

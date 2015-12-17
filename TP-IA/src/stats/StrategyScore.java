@@ -1,6 +1,6 @@
 package stats;
 
-import strategie.StrategieI;
+import strategy.StrategieI;
 
 /**
  * StrategyScore is a class to hold informations needed to log stats.

@@ -1,9 +1,9 @@
-package strategie;
-
-import individu.Person;
+package strategy;
 
 import java.util.List;
 import java.util.Map;
+
+import person.Person;
 
 /**
  * An interface to hide different implementations of {@link Person} strategy.

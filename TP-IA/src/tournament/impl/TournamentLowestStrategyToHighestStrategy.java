@@ -1,10 +1,9 @@
 package tournament.impl;
 
-import individu.Person;
-
 import java.util.List;
 import java.util.Map;
 
+import person.Person;
 import tournament.TournamentI;
 
 /**

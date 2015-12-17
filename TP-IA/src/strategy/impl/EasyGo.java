@@ -1,26 +1,26 @@
-package strategie.impl;
-
-import individu.Individu;
+package strategy.impl;
 
 import java.util.List;
 import java.util.Map;
 
-import strategie.StrategieI;
+import person.Person;
+import strategy.StrategieI;
 
 /**
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
-public class Rancunier implements StrategieI {
+public class EasyGo implements StrategieI {
 
 	boolean hasBeenBetrayed = false;
 
 	@Override
-	public boolean allerAuBar(final Individu moi,
-			final List<Map<Individu, Boolean>> historiqueDesTours) {
-		// le comportement simple est d’aller au bar, et si je me sens trahis,
-		// je reste chez moi
+	public boolean goToTheBar(final Person me,
+			final List<Map<Person, Boolean>> turnHistoric) {
+		// le comportement est de rester chez soi et si je trouve plus
+		// interessant
+		// d’aller au bar, je décide d’aller au bar.
 
-		final int nbTour = historiqueDesTours.size();
+		final int nbTour = turnHistoric.size();
 		if (nbTour < 1) {
 			// Go to the bar at first round
 			return true;
@@ -31,7 +31,7 @@ public class Rancunier implements StrategieI {
 
 				// expected to get 2 points each turn
 				final int scoreExpectedIfEachTurnWeGoToANonFullBarEveryTurn = nbTour * 2;
-				if (moi.getScore() == scoreExpectedIfEachTurnWeGoToANonFullBarEveryTurn) {
+				if (me.getScore() == scoreExpectedIfEachTurnWeGoToANonFullBarEveryTurn) {
 					// the bar was never full
 					return true;
 				} else {
