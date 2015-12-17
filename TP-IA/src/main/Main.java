@@ -20,19 +20,20 @@ public class Main {
 
 	public static void main(final String[] args) throws Exception {
 		checkNbInputsOrThrowException(args);
-		int inputNbPlacesAvailable = 0;
+
 		int inputNbPlTurn = 0;
 		int inputPopulationSize = 0;
+		int nbPlacesAvailable = 0;
 
 		try {
-			inputNbPlacesAvailable = Integer.parseInt(args[0]);
-			inputNbPlTurn = Integer.parseInt(args[1]);
-			inputPopulationSize = Integer.parseInt(args[2]);
+			inputNbPlTurn = Integer.parseInt(args[0]);
+			inputPopulationSize = Integer.parseInt(args[1]);
+			nbPlacesAvailable = Math.round(60 / 100 * inputPopulationSize);
 		} catch (final NumberFormatException nfe) {
 			throw new Exception("Arguments non valides: " + nfe.getMessage());
 		}
 
-		final Bar bar = Bar.getInstance(inputNbPlacesAvailable);
+		final Bar bar = Bar.getInstance(nbPlacesAvailable);
 
 		final List<Person> population = PersonFactory
 				.generatePopulation(inputPopulationSize);
@@ -50,13 +51,13 @@ public class Main {
 
 			for (final Person person : population) {
 				final boolean wentToTheBar = bar.choseGoToBar(person,
-						turnHistorique);
+						turnHistoric);
 				informationCurrentTurn.put(person, wentToTheBar);
 
 				System.out.println(person);
 			}
 
-			turnHistorique.add(informationCurrentTurn);
+			turnHistoric.add(informationCurrentTurn);
 
 			for (final Person i : informationCurrentTurn.keySet()) {
 				final boolean goToTheBar = informationCurrentTurn.get(i);
@@ -64,13 +65,13 @@ public class Main {
 			}
 
 			if (curTour >= 5) {
-				tournament.evolution(population, turnHistorique);
+				tournament.evolution(population, turnHistoric);
 			}
 		}
 
-		displayLastTurnResult(turnHistorique);
+		displayLastTurnResult(turnHistoric);
 
-		displayStatsPerPerson(population, turnHistorique);
+		displayStatsPerPerson(population, turnHistoric);
 
 		Stats.logStat(population);
 	}
@@ -91,8 +92,7 @@ public class Main {
 
 	}
 
-	private static void displayStatsPerPerson(
-			final List<Person> population,
+	private static void displayStatsPerPerson(final List<Person> population,
 			final List<Map<Person, Boolean>> turnHistorique) {
 
 		System.out.println("\tStatistiques par individu");
@@ -110,11 +110,8 @@ public class Main {
 					+ currentPerson.getStrategieName() + ")" + " : "
 					+ nbOfTimeToTheBar + " = " + currentPerson.getScore()
 					+ " (gagne en moyenne ");
-			System.out
-					.format("%.3f ",
-							(double) currentPerson.getScore()
-									/ (turnHistorique.size() > 0 ? turnHistorique
-											.size() : 1));
+			System.out.format("%.3f ", (double) currentPerson.getScore()
+					/ (turnHistorique.size() > 0 ? turnHistorique.size() : 1));
 			System.out.println("points par tour)");
 		}
 	}
@@ -126,9 +123,8 @@ public class Main {
 		if (args == null || args.length != 3) {
 			errorMessage.append("Nombre d'arguments invalide.").append("\n");
 			errorMessage.append("Format obligatoire :").append("\n");
-			errorMessage.append(
-					"	nbPlacesDispo(int) nbTour(int) taillePopulation(int)")
-					.append("\n");
+			errorMessage.append("	nbTour(int) taillePopulation(int)").append(
+					"\n");
 
 			throw new Exception(errorMessage.toString());
 		}

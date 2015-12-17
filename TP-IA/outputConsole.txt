@@ -1,0 +1,1698 @@
+	Tour 1
+Individu n°0(MajorMou) : 0 point
+Individu n°1(Sondeur) : 0 point
+Individu n°2(CycliqueTendanceCasanier [3]) : 0 point
+Individu n°3(Sondeur) : 0 point
+Individu n°4(Fetard) : 0 point
+Individu n°5(CycliqueTendanceFetard [1]) : 0 point
+Individu n°6(Fetard) : 0 point
+Individu n°7(MajorMou) : 0 point
+Individu n°8(Casanier) : 0 point
+Individu n°9(CycliqueTendanceFetard [1]) : 0 point
+0 maj score : 0 + 1
+1 maj score : 0 + 1
+2 maj score : 0 + 1
+3 maj score : 0 + 1
+4 maj score : 0 + 0
+5 maj score : 0 + 0
+6 maj score : 0 + 0
+7 maj score : 0 + 1
+8 maj score : 0 + 1
+9 maj score : 0 + 0
+	Tour 2
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (10/4)/2) = 1,250 : true
+Individu n°0(MajorMou) : 1 point
+Individu n°1(Sondeur) : 1 point
+Individu n°2(CycliqueTendanceCasanier [3]) : 1 point
+Individu n°3(Sondeur) : 1 point
+Individu n°4(Fetard) : 0 point
+Individu n°5(CycliqueTendanceFetard [1]) : 0 point
+Individu n°6(Fetard) : 0 point
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (10/8)/2) = 0,625 : true
+Individu n°7(MajorMou) : 1 point
+Individu n°8(Casanier) : 1 point
+Individu n°9(CycliqueTendanceFetard [1]) : 0 point
+0 maj score : 1 + 0
+1 maj score : 1 + 0
+2 maj score : 1 + 0
+3 maj score : 1 + 0
+4 maj score : 0 + 0
+5 maj score : 0 + 0
+6 maj score : 0 + 0
+7 maj score : 1 + 0
+8 maj score : 1 + 1
+9 maj score : 0 + 0
+	Tour 3
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (20/18)/3) = 0,370 : false
+Individu n°0(MajorMou) : 1 point
+Individu n°1(Sondeur) : 1 point
+Individu n°2(CycliqueTendanceCasanier [3]) : 1 point
+Individu n°3(Sondeur) : 1 point
+Individu n°4(Fetard) : 0 point
+Individu n°5(CycliqueTendanceFetard [1]) : 0 point
+Individu n°6(Fetard) : 0 point
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (20/16)/3) = 0,417 : false
+Individu n°7(MajorMou) : 1 point
+Individu n°8(Casanier) : 2 points
+Individu n°9(CycliqueTendanceFetard [1]) : 0 point
+0 maj score : 1 + 1
+1 maj score : 1 + 0
+2 maj score : 1 + 0
+3 maj score : 1 + 0
+4 maj score : 0 + 0
+5 maj score : 0 + 0
+6 maj score : 0 + 0
+7 maj score : 1 + 1
+8 maj score : 2 + 1
+9 maj score : 0 + 0
+	Tour 4
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (30/21)/4) = 0,357 : false
+Individu n°0(MajorMou) : 2 points
+Individu n°1(Sondeur) : 1 point
+Individu n°2(CycliqueTendanceCasanier [3]) : 1 point
+Individu n°3(Sondeur) : 1 point
+Individu n°4(Fetard) : 0 point
+Individu n°5(CycliqueTendanceFetard [1]) : 0 point
+Individu n°6(Fetard) : 0 point
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (30/18)/4) = 0,417 : false
+Individu n°7(MajorMou) : 2 points
+Individu n°8(Casanier) : 3 points
+Individu n°9(CycliqueTendanceFetard [1]) : 0 point
+0 maj score : 2 + 1
+1 maj score : 1 + 0
+2 maj score : 1 + 1
+3 maj score : 1 + 0
+4 maj score : 0 + 0
+5 maj score : 0 + 0
+6 maj score : 0 + 0
+7 maj score : 2 + 1
+8 maj score : 3 + 1
+9 maj score : 0 + 0
+	Tour 5
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (40/24)/5) = 0,333 : false
+Individu n°0(MajorMou) : 3 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/6) = 1,667 : false
+Individu n°1(Sondeur) : 1 point
+Individu n°2(CycliqueTendanceCasanier [3]) : 2 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/6) = 1,667 : false
+Individu n°3(Sondeur) : 1 point
+Individu n°4(Fetard) : 0 point
+Individu n°5(CycliqueTendanceFetard [1]) : 0 point
+Individu n°6(Fetard) : 0 point
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (40/20)/5) = 0,400 : false
+Individu n°7(MajorMou) : 3 points
+Individu n°8(Casanier) : 4 points
+Individu n°9(CycliqueTendanceFetard [1]) : 0 point
+0 maj score : 3 + 1
+1 maj score : 1 + 1
+2 maj score : 2 + 0
+3 maj score : 1 + 1
+4 maj score : 0 + 0
+5 maj score : 0 + 0
+6 maj score : 0 + 0
+7 maj score : 3 + 1
+8 maj score : 4 + 1
+9 maj score : 0 + 0
+	Individu avec le moins de points : Individu n°4(Fetard) : 0 point
+	Individu avec le plus de points : Individu n°8(Casanier) : 5 points
+	Tour 6
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (50/25)/6) = 0,333 : false
+Individu n°0(MajorMou) : 4 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/5) = 2,000 : false
+Individu n°1(Sondeur) : 2 points
+Individu n°2(CycliqueTendanceCasanier [3]) : 2 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/5) = 2,000 : false
+Individu n°3(Sondeur) : 2 points
+Individu n°4(Casanier) : 0 point
+Individu n°5(CycliqueTendanceFetard [1]) : 0 point
+Individu n°6(Fetard) : 0 point
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (50/20)/6) = 0,417 : false
+Individu n°7(MajorMou) : 4 points
+Individu n°8(Casanier) : 5 points
+Individu n°9(CycliqueTendanceFetard [1]) : 0 point
+0 maj score : 4 + 1
+1 maj score : 2 + 1
+2 maj score : 2 + 0
+3 maj score : 2 + 1
+4 maj score : 0 + 1
+5 maj score : 0 + 0
+6 maj score : 0 + 0
+7 maj score : 4 + 1
+8 maj score : 5 + 1
+9 maj score : 0 + 0
+	Individu avec le moins de points : Individu n°5(CycliqueTendanceFetard [1]) : 0 point
+	Individu avec le plus de points : Individu n°8(Casanier) : 6 points
+	Tour 7
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (60/24)/7) = 0,357 : false
+Individu n°0(MajorMou) : 5 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/4) = 2,500 : false
+Individu n°1(Sondeur) : 3 points
+Individu n°2(CycliqueTendanceCasanier [3]) : 2 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/3) = 3,333 : false
+Individu n°3(Sondeur) : 3 points
+Individu n°4(Casanier) : 1 point
+Individu n°5(Casanier) : 0 point
+Individu n°6(Fetard) : 0 point
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (60/12)/7) = 0,714 : true
+Individu n°7(MajorMou) : 5 points
+Individu n°8(Casanier) : 6 points
+Individu n°9(CycliqueTendanceFetard [1]) : 0 point
+0 maj score : 5 + 1
+1 maj score : 3 + 1
+2 maj score : 2 + 1
+3 maj score : 3 + 1
+4 maj score : 1 + 1
+5 maj score : 0 + 1
+6 maj score : 0 + 0
+7 maj score : 5 + 0
+8 maj score : 6 + 1
+9 maj score : 0 + 0
+	Individu avec le moins de points : Individu n°6(Fetard) : 0 point
+	Individu avec le plus de points : Individu n°8(Casanier) : 7 points
+	Tour 8
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (70/21)/8) = 0,417 : false
+Individu n°0(MajorMou) : 6 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/3) = 3,333 : false
+Individu n°1(Sondeur) : 4 points
+Individu n°2(CycliqueTendanceCasanier [3]) : 3 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/4) = 2,500 : false
+Individu n°3(Sondeur) : 4 points
+Individu n°4(Casanier) : 2 points
+Individu n°5(Casanier) : 1 point
+Individu n°6(Casanier) : 0 point
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (70/21)/8) = 0,417 : false
+Individu n°7(MajorMou) : 5 points
+Individu n°8(Casanier) : 7 points
+Individu n°9(CycliqueTendanceFetard [1]) : 0 point
+0 maj score : 6 + 1
+1 maj score : 4 + 1
+2 maj score : 3 + 0
+3 maj score : 4 + 1
+4 maj score : 2 + 1
+5 maj score : 1 + 1
+6 maj score : 0 + 1
+7 maj score : 5 + 1
+8 maj score : 7 + 1
+9 maj score : 0 + 0
+	Individu avec le moins de points : Individu n°9(CycliqueTendanceFetard [1]) : 0 point
+	Individu avec le plus de points : Individu n°8(Casanier) : 8 points
+	Tour 9
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (80/16)/9) = 0,556 : true
+Individu n°0(MajorMou) : 7 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/3) = 3,333 : false
+Individu n°1(Sondeur) : 5 points
+Individu n°2(CycliqueTendanceCasanier [3]) : 3 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/3) = 3,333 : false
+Individu n°3(Sondeur) : 5 points
+Individu n°4(Casanier) : 3 points
+Individu n°5(Casanier) : 2 points
+Individu n°6(Casanier) : 1 point
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (80/24)/9) = 0,370 : false
+Individu n°7(MajorMou) : 6 points
+Individu n°8(Casanier) : 8 points
+Individu n°9(Casanier) : 0 point
+0 maj score : 7 + 0
+1 maj score : 5 + 1
+2 maj score : 3 + 0
+3 maj score : 5 + 1
+4 maj score : 3 + 1
+5 maj score : 2 + 1
+6 maj score : 1 + 1
+7 maj score : 6 + 1
+8 maj score : 8 + 1
+9 maj score : 0 + 1
+	Individu avec le moins de points : Individu n°9(Casanier) : 1 point
+	Individu avec le plus de points : Individu n°0(MajorMou) : 7 points
+	Tour 10
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (90/18)/10) = 0,500 : true
+Individu n°0(MajorMou) : 7 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°1(Sondeur) : 6 points
+Individu n°2(CycliqueTendanceCasanier [3]) : 3 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°3(Sondeur) : 6 points
+Individu n°4(Casanier) : 4 points
+Individu n°5(Casanier) : 3 points
+Individu n°6(Casanier) : 2 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (90/9)/10) = 1,000 : true
+Individu n°7(MajorMou) : 7 points
+Individu n°8(Casanier) : 9 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (90/18)/10) = 0,500 : true
+Individu n°9(MajorMou) : 1 point
+0 maj score : 7 + 0
+1 maj score : 6 + 1
+2 maj score : 3 + 1
+3 maj score : 6 + 1
+4 maj score : 4 + 1
+5 maj score : 3 + 1
+6 maj score : 2 + 1
+7 maj score : 7 + 0
+8 maj score : 9 + 1
+9 maj score : 1 + 0
+	Individu avec le moins de points : Individu n°9(MajorMou) : 1 point
+	Individu avec le plus de points : Individu n°8(Casanier) : 10 points
+	Tour 11
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (100/30)/11) = 0,303 : false
+Individu n°0(MajorMou) : 7 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°1(Sondeur) : 7 points
+Individu n°2(CycliqueTendanceCasanier [3]) : 4 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/3) = 3,333 : false
+Individu n°3(Sondeur) : 7 points
+Individu n°4(Casanier) : 5 points
+Individu n°5(Casanier) : 4 points
+Individu n°6(Casanier) : 3 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (100/30)/11) = 0,303 : false
+Individu n°7(MajorMou) : 7 points
+Individu n°8(Casanier) : 10 points
+Individu n°9(Casanier) : 1 point
+0 maj score : 7 + 1
+1 maj score : 7 + 1
+2 maj score : 4 + 0
+3 maj score : 7 + 1
+4 maj score : 5 + 1
+5 maj score : 4 + 1
+6 maj score : 3 + 1
+7 maj score : 7 + 1
+8 maj score : 10 + 1
+9 maj score : 1 + 1
+	Individu avec le moins de points : Individu n°9(Casanier) : 2 points
+	Individu avec le plus de points : Individu n°0(MajorMou) : 8 points
+	Tour 12
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (110/11)/12) = 0,833 : true
+Individu n°0(MajorMou) : 8 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°1(Sondeur) : 8 points
+Individu n°2(CycliqueTendanceCasanier [3]) : 4 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°3(Sondeur) : 8 points
+Individu n°4(Casanier) : 6 points
+Individu n°5(Casanier) : 5 points
+Individu n°6(Casanier) : 4 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (110/22)/12) = 0,417 : false
+Individu n°7(MajorMou) : 8 points
+Individu n°8(Casanier) : 11 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (110/22)/12) = 0,417 : false
+Individu n°9(MajorMou) : 2 points
+0 maj score : 8 + 0
+1 maj score : 8 + 1
+2 maj score : 4 + 0
+3 maj score : 8 + 1
+4 maj score : 6 + 1
+5 maj score : 5 + 1
+6 maj score : 4 + 1
+7 maj score : 8 + 1
+8 maj score : 11 + 1
+9 maj score : 2 + 1
+	Individu avec le moins de points : Individu n°9(MajorMou) : 3 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 12 points
+	Tour 13
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (120/24)/13) = 0,385 : false
+Individu n°0(MajorMou) : 8 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°1(Sondeur) : 9 points
+Individu n°2(CycliqueTendanceCasanier [3]) : 4 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 9 points
+Individu n°4(Casanier) : 7 points
+Individu n°5(Casanier) : 6 points
+Individu n°6(Casanier) : 5 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (120/0)/13) = Infinity : true
+Individu n°7(MajorMou) : 9 points
+Individu n°8(Casanier) : 12 points
+Individu n°9(Casanier) : 3 points
+0 maj score : 8 + 1
+1 maj score : 9 + 1
+2 maj score : 4 + 1
+3 maj score : 9 + 1
+4 maj score : 7 + 1
+5 maj score : 6 + 1
+6 maj score : 5 + 1
+7 maj score : 9 + 0
+8 maj score : 12 + 1
+9 maj score : 3 + 1
+	Individu avec le moins de points : Individu n°9(Casanier) : 4 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 10 points
+	Tour 14
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (130/13)/14) = 0,714 : true
+Individu n°0(MajorMou) : 9 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°1(Sondeur) : 10 points
+Individu n°2(CycliqueTendanceCasanier [3]) : 5 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/3) = 3,333 : false
+Individu n°3(Sondeur) : 10 points
+Individu n°4(Casanier) : 8 points
+Individu n°5(Casanier) : 7 points
+Individu n°6(Casanier) : 6 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (130/39)/14) = 0,238 : false
+Individu n°7(MajorMou) : 9 points
+Individu n°8(Casanier) : 13 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°9(Sondeur) : 4 points
+0 maj score : 9 + 0
+1 maj score : 10 + 1
+2 maj score : 5 + 0
+3 maj score : 10 + 1
+4 maj score : 8 + 1
+5 maj score : 7 + 1
+6 maj score : 6 + 1
+7 maj score : 9 + 1
+8 maj score : 13 + 1
+9 maj score : 4 + 1
+	Individu avec le moins de points : Individu n°2(CycliqueTendanceCasanier [3]) : 5 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 14 points
+	Tour 15
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (140/28)/15) = 0,333 : false
+Individu n°0(MajorMou) : 9 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°1(Sondeur) : 11 points
+Individu n°2(Casanier) : 5 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 11 points
+Individu n°4(Casanier) : 9 points
+Individu n°5(Casanier) : 8 points
+Individu n°6(Casanier) : 7 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (140/0)/15) = Infinity : true
+Individu n°7(MajorMou) : 10 points
+Individu n°8(Casanier) : 14 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°9(Sondeur) : 5 points
+0 maj score : 9 + 1
+1 maj score : 11 + 1
+2 maj score : 5 + 1
+3 maj score : 11 + 1
+4 maj score : 9 + 1
+5 maj score : 8 + 1
+6 maj score : 7 + 1
+7 maj score : 10 + 0
+8 maj score : 14 + 1
+9 maj score : 5 + 1
+	Individu avec le moins de points : Individu n°2(Casanier) : 6 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 12 points
+	Tour 16
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (150/15)/16) = 0,625 : true
+Individu n°0(MajorMou) : 10 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°1(Sondeur) : 12 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°2(Sondeur) : 6 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°3(Sondeur) : 12 points
+Individu n°4(Casanier) : 10 points
+Individu n°5(Casanier) : 9 points
+Individu n°6(Casanier) : 8 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (150/30)/16) = 0,313 : false
+Individu n°7(MajorMou) : 10 points
+Individu n°8(Casanier) : 15 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°9(Sondeur) : 6 points
+0 maj score : 10 + 0
+1 maj score : 12 + 1
+2 maj score : 6 + 1
+3 maj score : 12 + 1
+4 maj score : 10 + 1
+5 maj score : 9 + 1
+6 maj score : 8 + 1
+7 maj score : 10 + 1
+8 maj score : 15 + 1
+9 maj score : 6 + 1
+	Individu avec le moins de points : Individu n°2(Sondeur) : 7 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 16 points
+	Tour 17
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (160/16)/17) = 0,588 : true
+Individu n°0(MajorMou) : 10 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°1(Sondeur) : 13 points
+Individu n°2(Casanier) : 7 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°3(Sondeur) : 13 points
+Individu n°4(Casanier) : 11 points
+Individu n°5(Casanier) : 10 points
+Individu n°6(Casanier) : 9 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (160/16)/17) = 0,588 : true
+Individu n°7(MajorMou) : 11 points
+Individu n°8(Casanier) : 16 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°9(Sondeur) : 7 points
+0 maj score : 10 + 0
+1 maj score : 13 + 1
+2 maj score : 7 + 1
+3 maj score : 13 + 1
+4 maj score : 11 + 1
+5 maj score : 10 + 1
+6 maj score : 9 + 1
+7 maj score : 11 + 0
+8 maj score : 16 + 1
+9 maj score : 7 + 1
+	Individu avec le moins de points : Individu n°2(Casanier) : 8 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 14 points
+	Tour 18
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (170/34)/18) = 0,278 : false
+Individu n°0(MajorMou) : 10 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°1(Sondeur) : 14 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°2(Sondeur) : 8 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°3(Sondeur) : 14 points
+Individu n°4(Casanier) : 12 points
+Individu n°5(Casanier) : 11 points
+Individu n°6(Casanier) : 10 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (170/17)/18) = 0,556 : true
+Individu n°7(MajorMou) : 11 points
+Individu n°8(Casanier) : 17 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°9(Sondeur) : 8 points
+0 maj score : 10 + 1
+1 maj score : 14 + 1
+2 maj score : 8 + 1
+3 maj score : 14 + 1
+4 maj score : 12 + 1
+5 maj score : 11 + 1
+6 maj score : 10 + 1
+7 maj score : 11 + 0
+8 maj score : 17 + 1
+9 maj score : 8 + 1
+	Individu avec le moins de points : Individu n°2(Sondeur) : 9 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 18 points
+	Tour 19
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (180/18)/19) = 0,526 : true
+Individu n°0(MajorMou) : 11 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°1(Sondeur) : 15 points
+Individu n°2(Casanier) : 9 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°3(Sondeur) : 15 points
+Individu n°4(Casanier) : 13 points
+Individu n°5(Casanier) : 12 points
+Individu n°6(Casanier) : 11 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (180/36)/19) = 0,263 : false
+Individu n°7(MajorMou) : 11 points
+Individu n°8(Casanier) : 18 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°9(Sondeur) : 9 points
+0 maj score : 11 + 0
+1 maj score : 15 + 1
+2 maj score : 9 + 1
+3 maj score : 15 + 1
+4 maj score : 13 + 1
+5 maj score : 12 + 1
+6 maj score : 11 + 1
+7 maj score : 11 + 1
+8 maj score : 18 + 1
+9 maj score : 9 + 1
+	Individu avec le moins de points : Individu n°2(Casanier) : 10 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 16 points
+	Tour 20
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (190/19)/20) = 0,500 : true
+Individu n°0(MajorMou) : 11 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°1(Sondeur) : 16 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°2(Sondeur) : 10 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°3(Sondeur) : 16 points
+Individu n°4(Casanier) : 14 points
+Individu n°5(Casanier) : 13 points
+Individu n°6(Casanier) : 12 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (190/19)/20) = 0,500 : true
+Individu n°7(MajorMou) : 12 points
+Individu n°8(Casanier) : 19 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/2) = 5,000 : false
+Individu n°9(Sondeur) : 10 points
+0 maj score : 11 + 0
+1 maj score : 16 + 1
+2 maj score : 10 + 1
+3 maj score : 16 + 1
+4 maj score : 14 + 1
+5 maj score : 13 + 1
+6 maj score : 12 + 1
+7 maj score : 12 + 0
+8 maj score : 19 + 1
+9 maj score : 10 + 1
+	Individu avec le moins de points : Individu n°0(MajorMou) : 11 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 20 points
+	Tour 21
+Individu n°0(Casanier) : 11 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°1(Sondeur) : 17 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°2(Sondeur) : 11 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°3(Sondeur) : 17 points
+Individu n°4(Casanier) : 15 points
+Individu n°5(Casanier) : 14 points
+Individu n°6(Casanier) : 13 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (200/20)/21) = 0,476 : false
+Individu n°7(MajorMou) : 12 points
+Individu n°8(Casanier) : 20 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 11 points
+0 maj score : 11 + 1
+1 maj score : 17 + 1
+2 maj score : 11 + 1
+3 maj score : 17 + 1
+4 maj score : 15 + 1
+5 maj score : 14 + 1
+6 maj score : 13 + 1
+7 maj score : 12 + 1
+8 maj score : 20 + 1
+9 maj score : 11 + 1
+	Individu avec le moins de points : Individu n°0(Casanier) : 12 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 18 points
+	Tour 22
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 12 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 18 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 12 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 18 points
+Individu n°4(Casanier) : 16 points
+Individu n°5(Casanier) : 15 points
+Individu n°6(Casanier) : 14 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (210/0)/22) = Infinity : true
+Individu n°7(MajorMou) : 13 points
+Individu n°8(Casanier) : 21 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°9(Sondeur) : 12 points
+0 maj score : 12 + 1
+1 maj score : 18 + 1
+2 maj score : 12 + 1
+3 maj score : 18 + 1
+4 maj score : 16 + 1
+5 maj score : 15 + 1
+6 maj score : 14 + 1
+7 maj score : 13 + 0
+8 maj score : 21 + 1
+9 maj score : 12 + 1
+	Individu avec le moins de points : Individu n°0(Sondeur) : 13 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 22 points
+	Tour 23
+Individu n°0(Casanier) : 13 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°1(Sondeur) : 19 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°2(Sondeur) : 13 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°3(Sondeur) : 19 points
+Individu n°4(Casanier) : 17 points
+Individu n°5(Casanier) : 16 points
+Individu n°6(Casanier) : 15 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (220/22)/23) = 0,435 : false
+Individu n°7(MajorMou) : 13 points
+Individu n°8(Casanier) : 22 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 13 points
+0 maj score : 13 + 1
+1 maj score : 19 + 1
+2 maj score : 13 + 1
+3 maj score : 19 + 1
+4 maj score : 17 + 1
+5 maj score : 16 + 1
+6 maj score : 15 + 1
+7 maj score : 13 + 1
+8 maj score : 22 + 1
+9 maj score : 13 + 1
+	Individu avec le moins de points : Individu n°0(Casanier) : 14 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 20 points
+	Tour 24
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 14 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 20 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 14 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 20 points
+Individu n°4(Casanier) : 18 points
+Individu n°5(Casanier) : 17 points
+Individu n°6(Casanier) : 16 points
+( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = (230/0)/24) = Infinity : true
+Individu n°7(MajorMou) : 14 points
+Individu n°8(Casanier) : 23 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°9(Sondeur) : 14 points
+0 maj score : 14 + 1
+1 maj score : 20 + 1
+2 maj score : 14 + 1
+3 maj score : 20 + 1
+4 maj score : 18 + 1
+5 maj score : 17 + 1
+6 maj score : 16 + 1
+7 maj score : 14 + 0
+8 maj score : 23 + 1
+9 maj score : 14 + 1
+	Individu avec le moins de points : Individu n°7(MajorMou) : 14 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 24 points
+	Tour 25
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°0(Sondeur) : 15 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°1(Sondeur) : 21 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°2(Sondeur) : 15 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/1) = 10,000 : false
+Individu n°3(Sondeur) : 21 points
+Individu n°4(Casanier) : 19 points
+Individu n°5(Casanier) : 18 points
+Individu n°6(Casanier) : 17 points
+Individu n°7(Casanier) : 14 points
+Individu n°8(Casanier) : 24 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 15 points
+0 maj score : 15 + 1
+1 maj score : 21 + 1
+2 maj score : 15 + 1
+3 maj score : 21 + 1
+4 maj score : 19 + 1
+5 maj score : 18 + 1
+6 maj score : 17 + 1
+7 maj score : 14 + 1
+8 maj score : 24 + 1
+9 maj score : 15 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 15 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 22 points
+	Tour 26
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 16 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 22 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 16 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 22 points
+Individu n°4(Casanier) : 20 points
+Individu n°5(Casanier) : 19 points
+Individu n°6(Casanier) : 18 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 15 points
+Individu n°8(Casanier) : 25 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 16 points
+0 maj score : 16 + 1
+1 maj score : 22 + 1
+2 maj score : 16 + 1
+3 maj score : 22 + 1
+4 maj score : 20 + 1
+5 maj score : 19 + 1
+6 maj score : 18 + 1
+7 maj score : 15 + 1
+8 maj score : 25 + 1
+9 maj score : 16 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 16 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 26 points
+	Tour 27
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 17 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 23 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 17 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 23 points
+Individu n°4(Casanier) : 21 points
+Individu n°5(Casanier) : 20 points
+Individu n°6(Casanier) : 19 points
+Individu n°7(Casanier) : 16 points
+Individu n°8(Casanier) : 26 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 17 points
+0 maj score : 17 + 1
+1 maj score : 23 + 1
+2 maj score : 17 + 1
+3 maj score : 23 + 1
+4 maj score : 21 + 1
+5 maj score : 20 + 1
+6 maj score : 19 + 1
+7 maj score : 16 + 1
+8 maj score : 26 + 1
+9 maj score : 17 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 17 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 24 points
+	Tour 28
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 18 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 24 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 18 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 24 points
+Individu n°4(Casanier) : 22 points
+Individu n°5(Casanier) : 21 points
+Individu n°6(Casanier) : 20 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 17 points
+Individu n°8(Casanier) : 27 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 18 points
+0 maj score : 18 + 1
+1 maj score : 24 + 1
+2 maj score : 18 + 1
+3 maj score : 24 + 1
+4 maj score : 22 + 1
+5 maj score : 21 + 1
+6 maj score : 20 + 1
+7 maj score : 17 + 1
+8 maj score : 27 + 1
+9 maj score : 18 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 18 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 28 points
+	Tour 29
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 19 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 25 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 19 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 25 points
+Individu n°4(Casanier) : 23 points
+Individu n°5(Casanier) : 22 points
+Individu n°6(Casanier) : 21 points
+Individu n°7(Casanier) : 18 points
+Individu n°8(Casanier) : 28 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 19 points
+0 maj score : 19 + 1
+1 maj score : 25 + 1
+2 maj score : 19 + 1
+3 maj score : 25 + 1
+4 maj score : 23 + 1
+5 maj score : 22 + 1
+6 maj score : 21 + 1
+7 maj score : 18 + 1
+8 maj score : 28 + 1
+9 maj score : 19 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 19 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 26 points
+	Tour 30
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 20 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 26 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 20 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 26 points
+Individu n°4(Casanier) : 24 points
+Individu n°5(Casanier) : 23 points
+Individu n°6(Casanier) : 22 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 19 points
+Individu n°8(Casanier) : 29 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 20 points
+0 maj score : 20 + 1
+1 maj score : 26 + 1
+2 maj score : 20 + 1
+3 maj score : 26 + 1
+4 maj score : 24 + 1
+5 maj score : 23 + 1
+6 maj score : 22 + 1
+7 maj score : 19 + 1
+8 maj score : 29 + 1
+9 maj score : 20 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 20 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 30 points
+	Tour 31
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 21 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 27 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 21 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 27 points
+Individu n°4(Casanier) : 25 points
+Individu n°5(Casanier) : 24 points
+Individu n°6(Casanier) : 23 points
+Individu n°7(Casanier) : 20 points
+Individu n°8(Casanier) : 30 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 21 points
+0 maj score : 21 + 1
+1 maj score : 27 + 1
+2 maj score : 21 + 1
+3 maj score : 27 + 1
+4 maj score : 25 + 1
+5 maj score : 24 + 1
+6 maj score : 23 + 1
+7 maj score : 20 + 1
+8 maj score : 30 + 1
+9 maj score : 21 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 21 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 28 points
+	Tour 32
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 22 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 28 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 22 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 28 points
+Individu n°4(Casanier) : 26 points
+Individu n°5(Casanier) : 25 points
+Individu n°6(Casanier) : 24 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 21 points
+Individu n°8(Casanier) : 31 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 22 points
+0 maj score : 22 + 1
+1 maj score : 28 + 1
+2 maj score : 22 + 1
+3 maj score : 28 + 1
+4 maj score : 26 + 1
+5 maj score : 25 + 1
+6 maj score : 24 + 1
+7 maj score : 21 + 1
+8 maj score : 31 + 1
+9 maj score : 22 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 22 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 32 points
+	Tour 33
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 23 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 29 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 23 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 29 points
+Individu n°4(Casanier) : 27 points
+Individu n°5(Casanier) : 26 points
+Individu n°6(Casanier) : 25 points
+Individu n°7(Casanier) : 22 points
+Individu n°8(Casanier) : 32 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 23 points
+0 maj score : 23 + 1
+1 maj score : 29 + 1
+2 maj score : 23 + 1
+3 maj score : 29 + 1
+4 maj score : 27 + 1
+5 maj score : 26 + 1
+6 maj score : 25 + 1
+7 maj score : 22 + 1
+8 maj score : 32 + 1
+9 maj score : 23 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 23 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 30 points
+	Tour 34
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 24 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 30 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 24 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 30 points
+Individu n°4(Casanier) : 28 points
+Individu n°5(Casanier) : 27 points
+Individu n°6(Casanier) : 26 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 23 points
+Individu n°8(Casanier) : 33 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 24 points
+0 maj score : 24 + 1
+1 maj score : 30 + 1
+2 maj score : 24 + 1
+3 maj score : 30 + 1
+4 maj score : 28 + 1
+5 maj score : 27 + 1
+6 maj score : 26 + 1
+7 maj score : 23 + 1
+8 maj score : 33 + 1
+9 maj score : 24 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 24 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 34 points
+	Tour 35
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 25 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 31 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 25 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 31 points
+Individu n°4(Casanier) : 29 points
+Individu n°5(Casanier) : 28 points
+Individu n°6(Casanier) : 27 points
+Individu n°7(Casanier) : 24 points
+Individu n°8(Casanier) : 34 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 25 points
+0 maj score : 25 + 1
+1 maj score : 31 + 1
+2 maj score : 25 + 1
+3 maj score : 31 + 1
+4 maj score : 29 + 1
+5 maj score : 28 + 1
+6 maj score : 27 + 1
+7 maj score : 24 + 1
+8 maj score : 34 + 1
+9 maj score : 25 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 25 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 32 points
+	Tour 36
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 26 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 32 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 26 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 32 points
+Individu n°4(Casanier) : 30 points
+Individu n°5(Casanier) : 29 points
+Individu n°6(Casanier) : 28 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 25 points
+Individu n°8(Casanier) : 35 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 26 points
+0 maj score : 26 + 1
+1 maj score : 32 + 1
+2 maj score : 26 + 1
+3 maj score : 32 + 1
+4 maj score : 30 + 1
+5 maj score : 29 + 1
+6 maj score : 28 + 1
+7 maj score : 25 + 1
+8 maj score : 35 + 1
+9 maj score : 26 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 26 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 36 points
+	Tour 37
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 27 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 33 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 27 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 33 points
+Individu n°4(Casanier) : 31 points
+Individu n°5(Casanier) : 30 points
+Individu n°6(Casanier) : 29 points
+Individu n°7(Casanier) : 26 points
+Individu n°8(Casanier) : 36 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 27 points
+0 maj score : 27 + 1
+1 maj score : 33 + 1
+2 maj score : 27 + 1
+3 maj score : 33 + 1
+4 maj score : 31 + 1
+5 maj score : 30 + 1
+6 maj score : 29 + 1
+7 maj score : 26 + 1
+8 maj score : 36 + 1
+9 maj score : 27 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 27 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 34 points
+	Tour 38
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 28 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 34 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 28 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 34 points
+Individu n°4(Casanier) : 32 points
+Individu n°5(Casanier) : 31 points
+Individu n°6(Casanier) : 30 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 27 points
+Individu n°8(Casanier) : 37 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 28 points
+0 maj score : 28 + 1
+1 maj score : 34 + 1
+2 maj score : 28 + 1
+3 maj score : 34 + 1
+4 maj score : 32 + 1
+5 maj score : 31 + 1
+6 maj score : 30 + 1
+7 maj score : 27 + 1
+8 maj score : 37 + 1
+9 maj score : 28 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 28 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 38 points
+	Tour 39
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 29 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 35 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 29 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 35 points
+Individu n°4(Casanier) : 33 points
+Individu n°5(Casanier) : 32 points
+Individu n°6(Casanier) : 31 points
+Individu n°7(Casanier) : 28 points
+Individu n°8(Casanier) : 38 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 29 points
+0 maj score : 29 + 1
+1 maj score : 35 + 1
+2 maj score : 29 + 1
+3 maj score : 35 + 1
+4 maj score : 33 + 1
+5 maj score : 32 + 1
+6 maj score : 31 + 1
+7 maj score : 28 + 1
+8 maj score : 38 + 1
+9 maj score : 29 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 29 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 36 points
+	Tour 40
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 30 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 36 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 30 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 36 points
+Individu n°4(Casanier) : 34 points
+Individu n°5(Casanier) : 33 points
+Individu n°6(Casanier) : 32 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 29 points
+Individu n°8(Casanier) : 39 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 30 points
+0 maj score : 30 + 1
+1 maj score : 36 + 1
+2 maj score : 30 + 1
+3 maj score : 36 + 1
+4 maj score : 34 + 1
+5 maj score : 33 + 1
+6 maj score : 32 + 1
+7 maj score : 29 + 1
+8 maj score : 39 + 1
+9 maj score : 30 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 30 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 40 points
+	Tour 41
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 31 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 37 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 31 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 37 points
+Individu n°4(Casanier) : 35 points
+Individu n°5(Casanier) : 34 points
+Individu n°6(Casanier) : 33 points
+Individu n°7(Casanier) : 30 points
+Individu n°8(Casanier) : 40 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 31 points
+0 maj score : 31 + 1
+1 maj score : 37 + 1
+2 maj score : 31 + 1
+3 maj score : 37 + 1
+4 maj score : 35 + 1
+5 maj score : 34 + 1
+6 maj score : 33 + 1
+7 maj score : 30 + 1
+8 maj score : 40 + 1
+9 maj score : 31 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 31 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 38 points
+	Tour 42
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 32 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 38 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 32 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 38 points
+Individu n°4(Casanier) : 36 points
+Individu n°5(Casanier) : 35 points
+Individu n°6(Casanier) : 34 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 31 points
+Individu n°8(Casanier) : 41 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 32 points
+0 maj score : 32 + 1
+1 maj score : 38 + 1
+2 maj score : 32 + 1
+3 maj score : 38 + 1
+4 maj score : 36 + 1
+5 maj score : 35 + 1
+6 maj score : 34 + 1
+7 maj score : 31 + 1
+8 maj score : 41 + 1
+9 maj score : 32 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 32 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 42 points
+	Tour 43
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 33 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 39 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 33 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 39 points
+Individu n°4(Casanier) : 37 points
+Individu n°5(Casanier) : 36 points
+Individu n°6(Casanier) : 35 points
+Individu n°7(Casanier) : 32 points
+Individu n°8(Casanier) : 42 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 33 points
+0 maj score : 33 + 1
+1 maj score : 39 + 1
+2 maj score : 33 + 1
+3 maj score : 39 + 1
+4 maj score : 37 + 1
+5 maj score : 36 + 1
+6 maj score : 35 + 1
+7 maj score : 32 + 1
+8 maj score : 42 + 1
+9 maj score : 33 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 33 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 40 points
+	Tour 44
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 34 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 40 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 34 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 40 points
+Individu n°4(Casanier) : 38 points
+Individu n°5(Casanier) : 37 points
+Individu n°6(Casanier) : 36 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 33 points
+Individu n°8(Casanier) : 43 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 34 points
+0 maj score : 34 + 1
+1 maj score : 40 + 1
+2 maj score : 34 + 1
+3 maj score : 40 + 1
+4 maj score : 38 + 1
+5 maj score : 37 + 1
+6 maj score : 36 + 1
+7 maj score : 33 + 1
+8 maj score : 43 + 1
+9 maj score : 34 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 34 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 44 points
+	Tour 45
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 35 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 41 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 35 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 41 points
+Individu n°4(Casanier) : 39 points
+Individu n°5(Casanier) : 38 points
+Individu n°6(Casanier) : 37 points
+Individu n°7(Casanier) : 34 points
+Individu n°8(Casanier) : 44 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 35 points
+0 maj score : 35 + 1
+1 maj score : 41 + 1
+2 maj score : 35 + 1
+3 maj score : 41 + 1
+4 maj score : 39 + 1
+5 maj score : 38 + 1
+6 maj score : 37 + 1
+7 maj score : 34 + 1
+8 maj score : 44 + 1
+9 maj score : 35 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 35 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 42 points
+	Tour 46
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 36 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 42 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 36 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 42 points
+Individu n°4(Casanier) : 40 points
+Individu n°5(Casanier) : 39 points
+Individu n°6(Casanier) : 38 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 35 points
+Individu n°8(Casanier) : 45 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 36 points
+0 maj score : 36 + 1
+1 maj score : 42 + 1
+2 maj score : 36 + 1
+3 maj score : 42 + 1
+4 maj score : 40 + 1
+5 maj score : 39 + 1
+6 maj score : 38 + 1
+7 maj score : 35 + 1
+8 maj score : 45 + 1
+9 maj score : 36 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 36 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 46 points
+	Tour 47
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 37 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 43 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 37 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 43 points
+Individu n°4(Casanier) : 41 points
+Individu n°5(Casanier) : 40 points
+Individu n°6(Casanier) : 39 points
+Individu n°7(Casanier) : 36 points
+Individu n°8(Casanier) : 46 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 37 points
+0 maj score : 37 + 1
+1 maj score : 43 + 1
+2 maj score : 37 + 1
+3 maj score : 43 + 1
+4 maj score : 41 + 1
+5 maj score : 40 + 1
+6 maj score : 39 + 1
+7 maj score : 36 + 1
+8 maj score : 46 + 1
+9 maj score : 37 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 37 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 44 points
+	Tour 48
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 38 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 44 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 38 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 44 points
+Individu n°4(Casanier) : 42 points
+Individu n°5(Casanier) : 41 points
+Individu n°6(Casanier) : 40 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 37 points
+Individu n°8(Casanier) : 47 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 38 points
+0 maj score : 38 + 1
+1 maj score : 44 + 1
+2 maj score : 38 + 1
+3 maj score : 44 + 1
+4 maj score : 42 + 1
+5 maj score : 41 + 1
+6 maj score : 40 + 1
+7 maj score : 37 + 1
+8 maj score : 47 + 1
+9 maj score : 38 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 38 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 48 points
+	Tour 49
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 39 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 45 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 39 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 45 points
+Individu n°4(Casanier) : 43 points
+Individu n°5(Casanier) : 42 points
+Individu n°6(Casanier) : 41 points
+Individu n°7(Casanier) : 38 points
+Individu n°8(Casanier) : 48 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 39 points
+0 maj score : 39 + 1
+1 maj score : 45 + 1
+2 maj score : 39 + 1
+3 maj score : 45 + 1
+4 maj score : 43 + 1
+5 maj score : 42 + 1
+6 maj score : 41 + 1
+7 maj score : 38 + 1
+8 maj score : 48 + 1
+9 maj score : 39 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 39 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 46 points
+	Tour 50
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 40 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 46 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 40 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 46 points
+Individu n°4(Casanier) : 44 points
+Individu n°5(Casanier) : 43 points
+Individu n°6(Casanier) : 42 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 39 points
+Individu n°8(Casanier) : 49 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 40 points
+0 maj score : 40 + 1
+1 maj score : 46 + 1
+2 maj score : 40 + 1
+3 maj score : 46 + 1
+4 maj score : 44 + 1
+5 maj score : 43 + 1
+6 maj score : 42 + 1
+7 maj score : 39 + 1
+8 maj score : 49 + 1
+9 maj score : 40 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 40 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 50 points
+	Tour 51
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 41 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 47 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 41 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 47 points
+Individu n°4(Casanier) : 45 points
+Individu n°5(Casanier) : 44 points
+Individu n°6(Casanier) : 43 points
+Individu n°7(Casanier) : 40 points
+Individu n°8(Casanier) : 50 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 41 points
+0 maj score : 41 + 1
+1 maj score : 47 + 1
+2 maj score : 41 + 1
+3 maj score : 47 + 1
+4 maj score : 45 + 1
+5 maj score : 44 + 1
+6 maj score : 43 + 1
+7 maj score : 40 + 1
+8 maj score : 50 + 1
+9 maj score : 41 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 41 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 48 points
+	Tour 52
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 42 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 48 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 42 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 48 points
+Individu n°4(Casanier) : 46 points
+Individu n°5(Casanier) : 45 points
+Individu n°6(Casanier) : 44 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 41 points
+Individu n°8(Casanier) : 51 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 42 points
+0 maj score : 42 + 1
+1 maj score : 48 + 1
+2 maj score : 42 + 1
+3 maj score : 48 + 1
+4 maj score : 46 + 1
+5 maj score : 45 + 1
+6 maj score : 44 + 1
+7 maj score : 41 + 1
+8 maj score : 51 + 1
+9 maj score : 42 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 42 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 52 points
+	Tour 53
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 43 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 49 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 43 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 49 points
+Individu n°4(Casanier) : 47 points
+Individu n°5(Casanier) : 46 points
+Individu n°6(Casanier) : 45 points
+Individu n°7(Casanier) : 42 points
+Individu n°8(Casanier) : 52 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 43 points
+0 maj score : 43 + 1
+1 maj score : 49 + 1
+2 maj score : 43 + 1
+3 maj score : 49 + 1
+4 maj score : 47 + 1
+5 maj score : 46 + 1
+6 maj score : 45 + 1
+7 maj score : 42 + 1
+8 maj score : 52 + 1
+9 maj score : 43 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 43 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 50 points
+	Tour 54
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 44 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 50 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 44 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 50 points
+Individu n°4(Casanier) : 48 points
+Individu n°5(Casanier) : 47 points
+Individu n°6(Casanier) : 46 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 43 points
+Individu n°8(Casanier) : 53 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 44 points
+0 maj score : 44 + 1
+1 maj score : 50 + 1
+2 maj score : 44 + 1
+3 maj score : 50 + 1
+4 maj score : 48 + 1
+5 maj score : 47 + 1
+6 maj score : 46 + 1
+7 maj score : 43 + 1
+8 maj score : 53 + 1
+9 maj score : 44 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 44 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 54 points
+	Tour 55
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 45 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 51 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 45 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 51 points
+Individu n°4(Casanier) : 49 points
+Individu n°5(Casanier) : 48 points
+Individu n°6(Casanier) : 47 points
+Individu n°7(Casanier) : 44 points
+Individu n°8(Casanier) : 54 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 45 points
+0 maj score : 45 + 1
+1 maj score : 51 + 1
+2 maj score : 45 + 1
+3 maj score : 51 + 1
+4 maj score : 49 + 1
+5 maj score : 48 + 1
+6 maj score : 47 + 1
+7 maj score : 44 + 1
+8 maj score : 54 + 1
+9 maj score : 45 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 45 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 52 points
+	Tour 56
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 46 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 52 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 46 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 52 points
+Individu n°4(Casanier) : 50 points
+Individu n°5(Casanier) : 49 points
+Individu n°6(Casanier) : 48 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 45 points
+Individu n°8(Casanier) : 55 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 46 points
+0 maj score : 46 + 1
+1 maj score : 52 + 1
+2 maj score : 46 + 1
+3 maj score : 52 + 1
+4 maj score : 50 + 1
+5 maj score : 49 + 1
+6 maj score : 48 + 1
+7 maj score : 45 + 1
+8 maj score : 55 + 1
+9 maj score : 46 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 46 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 56 points
+	Tour 57
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 47 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 53 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 47 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 53 points
+Individu n°4(Casanier) : 51 points
+Individu n°5(Casanier) : 50 points
+Individu n°6(Casanier) : 49 points
+Individu n°7(Casanier) : 46 points
+Individu n°8(Casanier) : 56 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 47 points
+0 maj score : 47 + 1
+1 maj score : 53 + 1
+2 maj score : 47 + 1
+3 maj score : 53 + 1
+4 maj score : 51 + 1
+5 maj score : 50 + 1
+6 maj score : 49 + 1
+7 maj score : 46 + 1
+8 maj score : 56 + 1
+9 maj score : 47 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 47 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 54 points
+	Tour 58
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 48 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 54 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 48 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 54 points
+Individu n°4(Casanier) : 52 points
+Individu n°5(Casanier) : 51 points
+Individu n°6(Casanier) : 50 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 47 points
+Individu n°8(Casanier) : 57 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 48 points
+0 maj score : 48 + 1
+1 maj score : 54 + 1
+2 maj score : 48 + 1
+3 maj score : 54 + 1
+4 maj score : 52 + 1
+5 maj score : 51 + 1
+6 maj score : 50 + 1
+7 maj score : 47 + 1
+8 maj score : 57 + 1
+9 maj score : 48 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 48 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 58 points
+	Tour 59
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 49 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 55 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 49 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 55 points
+Individu n°4(Casanier) : 53 points
+Individu n°5(Casanier) : 52 points
+Individu n°6(Casanier) : 51 points
+Individu n°7(Casanier) : 48 points
+Individu n°8(Casanier) : 58 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 49 points
+0 maj score : 49 + 1
+1 maj score : 55 + 1
+2 maj score : 49 + 1
+3 maj score : 55 + 1
+4 maj score : 53 + 1
+5 maj score : 52 + 1
+6 maj score : 51 + 1
+7 maj score : 48 + 1
+8 maj score : 58 + 1
+9 maj score : 49 + 1
+	Individu avec le moins de points : Individu n°7(Casanier) : 49 points
+	Individu avec le plus de points : Individu n°1(Sondeur) : 56 points
+	Tour 60
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°0(Sondeur) : 50 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°1(Sondeur) : 56 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°2(Sondeur) : 50 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°3(Sondeur) : 56 points
+Individu n°4(Casanier) : 54 points
+Individu n°5(Casanier) : 53 points
+Individu n°6(Casanier) : 52 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°7(Sondeur) : 49 points
+Individu n°8(Casanier) : 59 points
+( nbInviduTotal /  nbInviduAuBarTotal) = (10/0) = Infinity : false
+Individu n°9(Sondeur) : 50 points
+0 maj score : 50 + 1
+1 maj score : 56 + 1
+2 maj score : 50 + 1
+3 maj score : 56 + 1
+4 maj score : 54 + 1
+5 maj score : 53 + 1
+6 maj score : 52 + 1
+7 maj score : 49 + 1
+8 maj score : 59 + 1
+9 maj score : 50 + 1
+	Individu avec le moins de points : Individu n°7(Sondeur) : 50 points
+	Individu avec le plus de points : Individu n°8(Casanier) : 60 points
+	Resultat du dernier tour
+Individu n°0(Sondeur) : 51 points, false
+Individu n°1(Sondeur) : 57 points, false
+Individu n°2(Sondeur) : 51 points, false
+Individu n°3(Sondeur) : 57 points, false
+Individu n°4(Casanier) : 55 points, false
+Individu n°5(Casanier) : 54 points, false
+Individu n°6(Casanier) : 53 points, false
+Individu n°7(Casanier) : 50 points, false
+Individu n°8(Casanier) : 60 points, false
+Individu n°9(Sondeur) : 51 points, false
+	Statistiques par individu
+0(Sondeur) : 0 = 51 (gagne en moyenne 0,850 points par tour)
+1(Sondeur) : 0 = 57 (gagne en moyenne 0,950 points par tour)
+2(Sondeur) : 0 = 51 (gagne en moyenne 0,850 points par tour)
+3(Sondeur) : 0 = 57 (gagne en moyenne 0,950 points par tour)
+4(Casanier) : 0 = 55 (gagne en moyenne 0,917 points par tour)
+5(Casanier) : 0 = 54 (gagne en moyenne 0,900 points par tour)
+6(Casanier) : 0 = 53 (gagne en moyenne 0,883 points par tour)
+7(Casanier) : 0 = 50 (gagne en moyenne 0,833 points par tour)
+8(Casanier) : 0 = 60 (gagne en moyenne 1,000 points par tour)
+9(Sondeur) : 0 = 51 (gagne en moyenne 0,850 points par tour)
+		Stats will be logged in the file : 
+C:\Users\jordane\github\TP-IA\TP-IA\IA_csvLog.csv
