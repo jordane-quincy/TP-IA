@@ -1,36 +1,29 @@
 package strategie.impl;
 
-import individu.Individu;
+import individu.Person;
 
 import java.util.List;
 import java.util.Map;
 
+import strategie.StrategieI;
+
 /**
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
-public class CycliqueTendanceFetard extends Cyclique {
+public class CycliqueTendanceFetard implements StrategieI {
 
-	/**
-	 * <p>
-	 * {@inheritDoc}
-	 * </p>
-	 * A CycliqueTendanceFetard
-	 * 
-	 * <pre>
-	 * Example with i = 3 :
-	 * 	Turn 1 = Go to the bar
-	 * 	Turn 2 = Stay at home
-	 * 	Turn 3 = Stay at home
-	 * 	Turn 4 = Go to the bar
-	 * 	Turn 5 = Stay at home
-	 * 	Turn 6 = Stay at home
-	 * 	Turn 7 = Go to the bar
-	 * </pre>
-	 */
+	int i;
+
+	public CycliqueTendanceFetard() {
+		this.i = (int) (Math.random() * 100);
+	}
+
 	@Override
-	public boolean allerAuBar(final Individu moi,
-			final List<Map<Individu, Boolean>> historiqueDesTours) {
-		return this.doitAllerAuBarDurantCeTour(historiqueDesTours);
+	public boolean goToTheBar(
+			final List<Map<Person, Boolean>> turnHistoric) {
+				var test = turnHistoric.size
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

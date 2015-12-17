@@ -1,6 +1,6 @@
 package bar;
 
-import individu.Individu;
+import individu.Person;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,26 +8,26 @@ import java.util.Map;
 
 /**
  * Bar class, following the multithread Singleton design pattern.
- * 
- * @author DURIEZ Jean-Baptiste et QUINCY Jordane
+ *
+ * @author DURIEZ Jean-Baptiste and QUINCY Jordane
  */
 public class Bar {
 
 	// singleton
 	private static Bar uniqueInstance;
 
-	private final int nbPlacesDisponibles;
-	private final List<Individu> listDesIndividusPresents = new ArrayList<Individu>();
+	private final int nbPlacesAvailaible;
+	private final List<Person> listOfPresentPerson = new ArrayList<Person>();
 
 	/**
 	 * Return the unique instance of the Bar.
-	 * 
-	 * @param nbPlacesDisponibles
+	 *
+	 * @param nbPlacesAvailaible
 	 * @return the Bar
 	 */
-	public static synchronized Bar getInstance(final int nbPlacesDisponibles) {
+	public static synchronized Bar getInstance(final int nbPlacesAvailaible) {
 		if (uniqueInstance == null) {
-			uniqueInstance = new Bar(nbPlacesDisponibles);
+			uniqueInstance = new Bar(nbPlacesAvailaible);
 		}
 		return uniqueInstance;
 	}
@@ -42,30 +42,30 @@ public class Bar {
 
 	/**
 	 * The "real" constructor.
-	 * 
-	 * @param nbPlacesDisponibles
+	 *
+	 * @param nbPlacesAvailaible
 	 */
-	private Bar(final int nbPlacesDisponibles) {
-		this.nbPlacesDisponibles = nbPlacesDisponibles;
+	private Bar(final int nbPlacesAvailaible) {
+		this.nbPlacesAvailaible = nbPlacesAvailaible;
 	}
 
 	/**
 	 * Add the person (or not) to the bar according to his/her strategy.
-	 * 
+	 *
 	 * @param i
 	 *            a person
-	 * @param historiqueDesTours
+	 * @param turnHistoric
 	 *            the List of all previous turn informations
 	 * @return true if the person go to the bar, false otherwise
 	 */
-	public boolean choisiAllerAuBar(final Individu i,
-			final List<Map<Individu, Boolean>> historiqueDesTours) {
-		final boolean vaAuBar = i.vaAuBar(historiqueDesTours);
-		if (vaAuBar) {
-			this.listDesIndividusPresents.add(i);
+	public boolean choseGoToBar(final Person i,
+			final List<Map<Person, Boolean>> turnHistoric) {
+		final boolean goToTheBar = i.goToTheBar(turnHistoric);
+		if (goToTheBar) {
+			this.listOfPresentPerson.add(i);
 		}
 
-		return vaAuBar;
+		return goToTheBar;
 	}
 
 	/**
@@ -73,7 +73,7 @@ public class Bar {
 	 */
 	public void reset() {
 		// All drunk people have to leave to bar.
-		this.listDesIndividusPresents.clear();
+		this.listOfPresentPerson.clear();
 		// Vaccum cleaner robot are amazing !
 		this.runTheAutoCleaningRobot();
 	}
@@ -88,14 +88,14 @@ public class Bar {
 
 	/**
 	 * Determine if too many people went to the bar this week.
-	 * 
+	 *
 	 * @return true if the bar is full, false otherwise
 	 */
-	public boolean isBarPlein() {
-		// System.out.println(this.nbPlacesDisponibles <
-		// this.listDesIndividusPresents.size() ? "barPlein" :
+	public boolean isFullBar() {
+		// System.out.println(this.nbPlacesAvailaible <
+		// this.listOfPresentPerson.size() ? "barPlein" :
 		// "place(s) dispo");
 
-		return this.nbPlacesDisponibles < this.listDesIndividusPresents.size();
+		return this.nbPlacesAvailaible < this.listOfPresentPerson.size();
 	}
 }

@@ -1,6 +1,6 @@
 package strategie.impl;
 
-import individu.Individu;
+import individu.Person;
 
 import java.util.List;
 import java.util.Map;
@@ -13,28 +13,28 @@ import strategie.StrategieI;
 public class Pavlovien implements StrategieI {
 
 	@Override
-	public boolean allerAuBar(final Individu moi,
-			final List<Map<Individu, Boolean>> historiqueDesTours) {
-		// Je reste chez moi et ensuite je fais la même action que les autres du
+	public boolean goToTheBar(final Person me,
+			final List<Map<Person, Boolean>> turnHistoric) {
+		// Je reste chez me et ensuite je fais la même action que les autres du
 		// coup précédent
 
-		final int nbTour = historiqueDesTours.size();
+		final int nbTour = turnHistoric.size();
 		if (nbTour < 1) {
 			// Stay at home at first round
 			return false;
 		} else {
 			int nbInviduAuBarAuDernierTour = 0;
 			int nbInviduAuDernierTour = 0;
-			final Map<Individu, Boolean> tourPrecedent = historiqueDesTours
+			final Map<Person, Boolean> tourPrecedent = turnHistoric
 					.get(nbTour - 1);
-			for (final Individu i : tourPrecedent.keySet()) {
+			for (final Person i : tourPrecedent.keySet()) {
 				final boolean estPartiAuBar = tourPrecedent.get(i);
 				if (estPartiAuBar) {
 					nbInviduAuBarAuDernierTour++;
 				}
 				nbInviduAuDernierTour++;
 			}
-			final double ratioNbIndividuAuBarSurNbIndividuAuDernierTour = (double) nbInviduAuDernierTour
+			final double ratioNbPersonAuBarSurNbPersonAuDernierTour = (double) nbInviduAuDernierTour
 					/ nbInviduAuBarAuDernierTour;
 
 			System.out
@@ -43,10 +43,10 @@ public class Pavlovien implements StrategieI {
 							+ "/"
 							+ nbInviduAuBarAuDernierTour + " = ");
 			System.out.format("%.3f : ",
-					ratioNbIndividuAuBarSurNbIndividuAuDernierTour);
+					ratioNbPersonAuBarSurNbPersonAuDernierTour);
 			System.out
-					.println(ratioNbIndividuAuBarSurNbIndividuAuDernierTour >= 0.5d);
-			return ratioNbIndividuAuBarSurNbIndividuAuDernierTour >= 0.5d;
+					.println(ratioNbPersonAuBarSurNbPersonAuDernierTour >= 0.5d);
+			return ratioNbPersonAuBarSurNbPersonAuDernierTour >= 0.5d;
 		}
 	}
 }

@@ -1,6 +1,6 @@
 package strategie.impl;
 
-import individu.Individu;
+import individu.Person;
 
 import java.util.List;
 import java.util.Map;
@@ -13,12 +13,12 @@ import strategie.StrategieI;
 public class MajorMou implements StrategieI {
 
 	@Override
-	public boolean allerAuBar(final Individu moi,
-			final List<Map<Individu, Boolean>> historiqueDesTours) {
-		// TODO Je reste chez moi et ensuite je joue l'aciton que les autres ont
+	public boolean goToTheBar(final Person me,
+			final List<Map<Person, Boolean>> turnHistoric) {
+		// TODO Je reste chez me et ensuite je joue l'aciton que les autres ont
 		// joués majoritairement sur tous les coups précédents
 
-		final int nbTour = historiqueDesTours.size();
+		final int nbTour = turnHistoric.size();
 		if (nbTour < 1) {
 			// Stay at home at first round
 			return false;
@@ -26,8 +26,8 @@ public class MajorMou implements StrategieI {
 
 			int nbInviduAuBarTotal = 0;
 			int nbInviduTotal = 0;
-			for (final Map<Individu, Boolean> tour : historiqueDesTours) {
-				for (final Individu i : tour.keySet()) {
+			for (final Map<Person, Boolean> tour : turnHistoric) {
+				for (final Person i : tour.keySet()) {
 					final boolean estPartiAuBar = tour.get(i);
 					if (estPartiAuBar) {
 						nbInviduAuBarTotal++;
@@ -36,20 +36,20 @@ public class MajorMou implements StrategieI {
 				}
 			}
 
-			final double ratioNbIndividuAuBarSurNbIndividuParTour = (double) nbInviduTotal
-					/ nbInviduAuBarTotal / (historiqueDesTours.size() + 1);
+			final double ratioNbPersonAuBarSurNbPersonParTour = (double) nbInviduTotal
+					/ nbInviduAuBarTotal / (turnHistoric.size() + 1);
 			System.out
-					.print("( nbInviduTotal /  nbInviduAuBarTotal) / historiqueDesTours.size() = ("
+					.print("( nbInviduTotal /  nbInviduAuBarTotal) / turnHistoric.size() = ("
 							+ nbInviduTotal
 							+ "/"
 							+ nbInviduAuBarTotal
 							+ ")/"
-							+ (historiqueDesTours.size() + 1) + ") = ");
+							+ (turnHistoric.size() + 1) + ") = ");
 			System.out.format("%.3f : ",
-					ratioNbIndividuAuBarSurNbIndividuParTour);
+					ratioNbPersonAuBarSurNbPersonParTour);
 			System.out
-					.println(ratioNbIndividuAuBarSurNbIndividuParTour >= 0.5d);
-			return ratioNbIndividuAuBarSurNbIndividuParTour >= 0.5d;
+					.println(ratioNbPersonAuBarSurNbPersonParTour >= 0.5d);
+			return ratioNbPersonAuBarSurNbPersonParTour >= 0.5d;
 		}
 	}
 }

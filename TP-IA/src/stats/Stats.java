@@ -1,6 +1,6 @@
 package stats;
 
-import individu.Individu;
+import individu.Person;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -24,36 +24,36 @@ public class Stats {
 
 	/**
 	 * Compute the statistics about {@link StrategieI} for the population.
-	 * 
+	 *
 	 * @param population
-	 *            a List of {@link Individu}
+	 *            a List of {@link Person}
 	 */
-	public static void logStat(final List<Individu> population) {
-		final Map<String, StrategyScore> mapStrategieScoreTotal = new LinkedHashMap<String, StrategyScore>();
+	public static void logStat(final List<Person> population) {
+		final Map<String, StrategyScore> mapTotalScoreStrategy = new LinkedHashMap<String, StrategyScore>();
 
-		for (final Individu i : population) {
+		for (final Person i : population) {
 			// strategyName will be used as a key
 			final String strategyName = i.getStrategieName();
 
 			// if it's the first person with this strategy : init
-			if (!mapStrategieScoreTotal.containsKey(strategyName)) {
-				mapStrategieScoreTotal.put(strategyName, new StrategyScore());
+			if (!mapTotalScoreStrategy.containsKey(strategyName)) {
+				mapTotalScoreStrategy.put(strategyName, new StrategyScore());
 			}
-			final StrategyScore strategyScore = mapStrategieScoreTotal
+			final StrategyScore strategyScore = mapTotalScoreStrategy
 					.get(strategyName);
 
 			strategyScore.incrementStrategyScore(i.getScore());
 
-			mapStrategieScoreTotal.put(strategyName, strategyScore);
+			mapTotalScoreStrategy.put(strategyName, strategyScore);
 		}
 
 		// After computation, write statistics in a CSV file.
-		writeCsvLog(mapStrategieScoreTotal);
+		writeCsvLog(mapTotalScoreStrategy);
 	}
 
 	/**
 	 * Write in a file
-	 * 
+	 *
 	 * @param mapStrategieScore
 	 *            the Map of {@link StrategieI} statistics
 	 */
@@ -79,7 +79,7 @@ public class Stats {
 				// Compute stats
 				final StrategyScore strategyScore = mapStrategieScore
 						.get(strategyName);
-				final int pointsForStrategy = strategyScore.getScoreTotal();
+				final int pointsForStrategy = strategyScore.getTotalScore();
 				final int nbPersonForStrategy = strategyScore.getNbPerson() > 0 ? strategyScore
 						.getNbPerson() : 1; // avoid div by zero
 				final double ratioPointByPersonByStrategy = (double) pointsForStrategy

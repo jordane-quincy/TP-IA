@@ -1,6 +1,6 @@
 package strategie.impl;
 
-import individu.Individu;
+import individu.Person;
 
 import java.util.List;
 import java.util.Map;
@@ -16,15 +16,14 @@ public class Casanier implements StrategieI {
 	 * <p>
 	 * {@inheritDoc}
 	 * </p>
-	 * 
+	 *
 	 * <pre>
 	 * A Casanier always stay at home.
 	 * </pre>
 	 */
 	@Override
-	public boolean allerAuBar(final Individu moi,
-			final List<Map<Individu, Boolean>> historiqueDesTours) {
+	public boolean goToTheBar(final Person me,
+			final List<Map<Person, Boolean>> turnHistoric) {
 		return false;
 	}
-
 }

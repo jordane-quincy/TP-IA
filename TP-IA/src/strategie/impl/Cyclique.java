@@ -1,6 +1,6 @@
 package strategie.impl;
 
-import individu.Individu;
+import individu.Person;
 
 import java.util.List;
 import java.util.Map;
@@ -21,20 +21,20 @@ public abstract class Cyclique implements StrategieI {
 
 	// Must be implemented in sub classes.
 	@Override
-	public abstract boolean allerAuBar(Individu moi,
-			final List<Map<Individu, Boolean>> historiqueDesTours);
+	public abstract boolean goToTheBar(Person me,
+			final List<Map<Person, Boolean>> turnHistoric);
 
 	/**
 	 * Periodic people choose to do something one time and the opposite during X
 	 * turn.
-	 * 
-	 * @param historiqueDesTours
+	 *
+	 * @param turnHistoric
 	 * @return
 	 */
 	// used only by sub classes
 	protected boolean doitAllerAuBarDurantCeTour(
-			final List<Map<Individu, Boolean>> historiqueDesTours) {
-		return historiqueDesTours.size() % this.i == 0;
+			final List<Map<Person, Boolean>> turnHistoric) {
+		return turnHistoric.size() % this.i == 0;
 	}
 
 	/**

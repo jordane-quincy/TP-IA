@@ -1,6 +1,6 @@
 package tournament.impl;
 
-import individu.Individu;
+import individu.Person;
 
 import java.util.List;
 import java.util.Map;
@@ -9,44 +9,44 @@ import tournament.TournamentI;
 
 /**
  * Tournoi class.
- * 
+ *
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
 public class TournamentLowestStrategyToHighestStrategy implements TournamentI {
 
 	@Override
-	public void evolution(final List<Individu> population,
-			final List<Map<Individu, Boolean>> historiqueDesTours) {
+	public void evolution(final List<Person> population,
+			final List<Map<Person, Boolean>> historiqueDesTours) {
 
-		final Map<Individu, Boolean> resultatDernierTour = historiqueDesTours
+		final Map<Person, Boolean> resultatDernierTour = historiqueDesTours
 				.get(historiqueDesTours.size() - 1);
 
-		Individu individuScoreMin = null;
-		Individu individuScoreMax = null;
+		Person individuScoreMin = null;
+		Person individuScoreMax = null;
 		// We loop over all persons
-		for (final Individu curIndividu : resultatDernierTour.keySet()) {
+		for (final Person curPerson : resultatDernierTour.keySet()) {
 			if (individuScoreMin == null) {
 				// init
-				individuScoreMin = curIndividu;
+				individuScoreMin = curPerson;
 			} else {
 				// else, if we find someone with a lower score : save it
-				if (curIndividu.getScore() < individuScoreMin.getScore()) {
-					individuScoreMin = curIndividu;
+				if (curPerson.getScore() < individuScoreMin.getScore()) {
+					individuScoreMin = curPerson;
 				}
 			}
 		}
 
-		for (final Individu curIndividu : resultatDernierTour.keySet()) {
+		for (final Person curPerson : resultatDernierTour.keySet()) {
 			// we look for the highest score with a different strategy
-			if (!curIndividu.getStrategieName().equals(
+			if (!curPerson.getStrategieName().equals(
 					individuScoreMin.getStrategieName())) {
 				if (individuScoreMax == null) {
 					// init
-					individuScoreMax = curIndividu;
+					individuScoreMax = curPerson;
 				} else {
 					// else, if we find someone with a higher score: save it
-					if (curIndividu.getScore() > individuScoreMax.getScore()) {
-						individuScoreMax = curIndividu;
+					if (curPerson.getScore() > individuScoreMax.getScore()) {
+						individuScoreMax = curPerson;
 					}
 				}
 			}

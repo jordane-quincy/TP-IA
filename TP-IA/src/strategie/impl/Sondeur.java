@@ -1,6 +1,6 @@
 package strategie.impl;
 
-import individu.Individu;
+import individu.Person;
 
 import java.util.List;
 import java.util.Map;
@@ -13,10 +13,10 @@ import strategie.StrategieI;
 public class Sondeur implements StrategieI {
 
 	@Override
-	public boolean allerAuBar(final Individu moi,
-			final List<Map<Individu, Boolean>> historiqueDesTours) {
-		// je reste chez moi, ensuite je vais deux fois au bar. Si la majorité
-		// reste chez eux, je reste également chez moi (sinon je vais au bar).
+	public boolean goToTheBar(final Person me,
+			final List<Map<Person, Boolean>> historiqueDesTours) {
+		// je reste chez me, ensuite je vais deux fois au bar. Si la majorité
+		// reste chez eux, je reste également chez me (sinon je vais au bar).
 
 		final int nbTour = historiqueDesTours.size();
 		if (nbTour < 1) {
@@ -29,9 +29,9 @@ public class Sondeur implements StrategieI {
 
 			int nbInviduAuBarTotal = 0;
 			int nbInviduTotal = 0;
-			final Map<Individu, Boolean> tour = historiqueDesTours
+			final Map<Person, Boolean> tour = historiqueDesTours
 					.get(historiqueDesTours.size() - 1);
-			for (final Individu i : tour.keySet()) {
+			for (final Person i : tour.keySet()) {
 				final boolean estPartiAuBar = tour.get(i);
 				if (estPartiAuBar) {
 					nbInviduAuBarTotal++;
@@ -39,15 +39,15 @@ public class Sondeur implements StrategieI {
 				nbInviduTotal++;
 			}
 
-			final double ratioNbIndividuAuBarSurNbIndividuDuTour = (double) nbInviduTotal
+			final double ratioNbPersonAuBarSurNbPersonDuTour = (double) nbInviduTotal
 					/ nbInviduAuBarTotal;
 			System.out.print("( nbInviduTotal /  nbInviduAuBarTotal) = ("
 					+ nbInviduTotal + "/" + nbInviduAuBarTotal + ") = ");
 			System.out.format("%.3f : ",
-					ratioNbIndividuAuBarSurNbIndividuDuTour);
+					ratioNbPersonAuBarSurNbPersonDuTour);
 			System.out
-					.println(!(ratioNbIndividuAuBarSurNbIndividuDuTour >= 0.5d));
-			return !(ratioNbIndividuAuBarSurNbIndividuDuTour >= 0.5d);
+					.println(!(ratioNbPersonAuBarSurNbPersonDuTour >= 0.5d));
+			return !(ratioNbPersonAuBarSurNbPersonDuTour >= 0.5d);
 		}
 	}
 }
