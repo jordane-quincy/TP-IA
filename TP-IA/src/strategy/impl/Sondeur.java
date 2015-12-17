@@ -17,36 +17,36 @@ public class Sondeur implements StrategieI {
 		// je reste chez me, ensuite je vais deux fois au bar. Si la majorité
 		// reste chez eux, je reste également chez me (sinon je vais au bar).
 
-		final int nbTour = historiqueDesTours.size();
-		if (nbTour < 1) {
+		final int nbTurn = historiqueDesTours.size();
+		if (nbTurn < 1) {
 			// Stay at home at first round
 			return false;
-		} else if (nbTour <= 3) {
+		} else if (nbTurn <= 3) {
 			// Go to the bar at first round
 			return true;
 		} else {
 
-			int nbInviduAuBarTotal = 0;
-			int nbInviduTotal = 0;
+			int nbTotalPersonAtTheBar = 0;
+			int nbTotalPerson = 0;
 			final Map<Person, Boolean> tour = historiqueDesTours
 					.get(historiqueDesTours.size() - 1);
 			for (final Person i : tour.keySet()) {
 				final boolean estPartiAuBar = tour.get(i);
 				if (estPartiAuBar) {
-					nbInviduAuBarTotal++;
+					nbTotalPersonAtTheBar++;
 				}
-				nbInviduTotal++;
+				nbTotalPerson++;
 			}
 
-			final double ratioNbPersonAuBarSurNbPersonDuTour = (double) nbInviduTotal
-					/ nbInviduAuBarTotal;
-			System.out.print("( nbInviduTotal /  nbInviduAuBarTotal) = ("
-					+ nbInviduTotal + "/" + nbInviduAuBarTotal + ") = ");
+			final double ratioNbPersonAtTheBarOnNbPersonAtThisTurn = (double) nbTotalPerson
+					/ nbTotalPersonAtTheBar;
+			System.out.print("( nbTotalPerson /  nbTotalPersonAtTheBar) = ("
+					+ nbTotalPerson + "/" + nbTotalPersonAtTheBar + ") = ");
 			System.out.format("%.3f : ",
-					ratioNbPersonAuBarSurNbPersonDuTour);
+					ratioNbPersonAtTheBarOnNbPersonAtThisTurn);
 			System.out
-					.println(!(ratioNbPersonAuBarSurNbPersonDuTour >= 0.5d));
-			return !(ratioNbPersonAuBarSurNbPersonDuTour >= 0.5d);
+					.println(!(ratioNbPersonAtTheBarOnNbPersonAtThisTurn >= 0.5d));
+			return !(ratioNbPersonAtTheBarOnNbPersonAtThisTurn >= 0.5d);
 		}
 	}
 }
