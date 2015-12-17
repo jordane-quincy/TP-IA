@@ -27,7 +27,8 @@ public class Main {
 		try {
 			inputNbPlTurn = Integer.parseInt(args[0]);
 			inputPopulationSize = Integer.parseInt(args[1]);
-			nbPlacesAvailable = Math.round(60 / 100 * inputPopulationSize);
+			// the bar accept 60% of the population
+			nbPlacesAvailable = Math.round(0.2f * inputPopulationSize);
 		} catch (final NumberFormatException nfe) {
 			throw new Exception("Arguments non valides: " + nfe.getMessage());
 		}
@@ -119,7 +120,7 @@ public class Main {
 			throws Exception {
 		// TODO: mettre les types des arguments (int)
 		final StringBuilder errorMessage = new StringBuilder();
-		if (args == null || args.length != 3) {
+		if (args == null || args.length != 2) {
 			errorMessage.append("Nombre d'arguments invalide.").append("\n");
 			errorMessage.append("Format obligatoire :").append("\n");
 			errorMessage.append("	nbTour(int) taillePopulation(int)").append(

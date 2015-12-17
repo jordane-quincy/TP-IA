@@ -18,9 +18,6 @@ public abstract class Cyclique implements StrategieI {
 		this.i = 1 + (int) (Math.random() * 3);
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
 	// Must be implemented in sub classes.
 	@Override
 	public abstract boolean goToTheBar(Person me,

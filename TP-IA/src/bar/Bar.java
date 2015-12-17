@@ -8,7 +8,7 @@ import person.Person;
 
 /**
  * Bar class, following the multithread Singleton design pattern.
- *
+ * 
  * @author DURIEZ Jean-Baptiste and QUINCY Jordane
  */
 public class Bar {
@@ -18,10 +18,11 @@ public class Bar {
 
 	private final int nbPlacesAvailaible;
 	private final List<Person> listOfPresentPerson = new ArrayList<Person>();
+	private final List<Boolean> listOfBarState = new ArrayList<Boolean>();
 
 	/**
 	 * Return the unique instance of the Bar.
-	 *
+	 * 
 	 * @param nbPlacesAvailaible
 	 * @return the Bar
 	 */
@@ -42,7 +43,7 @@ public class Bar {
 
 	/**
 	 * The "real" constructor.
-	 *
+	 * 
 	 * @param nbPlacesAvailaible
 	 */
 	private Bar(final int nbPlacesAvailaible) {
@@ -51,7 +52,7 @@ public class Bar {
 
 	/**
 	 * Add the person (or not) to the bar according to his/her strategy.
-	 *
+	 * 
 	 * @param i
 	 *            a person
 	 * @param turnHistoric
@@ -88,7 +89,7 @@ public class Bar {
 
 	/**
 	 * Determine if too many people went to the bar this week.
-	 *
+	 * 
 	 * @return true if the bar is full, false otherwise
 	 */
 	public boolean isFullBar() {
@@ -96,6 +97,23 @@ public class Bar {
 		// this.listOfPresentPerson.size() ? "barPlein" :
 		// "place(s) dispo");
 
-		return this.nbPlacesAvailaible < this.listOfPresentPerson.size();
+		final boolean isFullBar = this.nbPlacesAvailaible < this.listOfPresentPerson
+				.size();
+
+		// save the state for this week
+		this.listOfBarState.add(isFullBar);
+
+		return isFullBar;
+	}
+
+	/**
+	 * Determine if the bar was full or not at a turn.
+	 * 
+	 * @param turnNumber
+	 *            the number of the turn
+	 * @return true is the bar was full at the turn turnNumber, false otherwise
+	 */
+	public boolean getBarState(final int turnNumber) {
+		return this.listOfBarState.get(turnNumber);
 	}
 }

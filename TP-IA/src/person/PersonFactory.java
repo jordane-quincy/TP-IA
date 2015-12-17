@@ -8,11 +8,13 @@ import strategy.StrategieI;
 import strategy.impl.Casanier;
 import strategy.impl.CycliqueTendanceCasanier;
 import strategy.impl.CycliqueTendanceFetard;
+import strategy.impl.EasyGo;
 import strategy.impl.Fetard;
 import strategy.impl.Lunatique;
 import strategy.impl.MajorMou;
 import strategy.impl.Mefiant;
 import strategy.impl.Pavlovien;
+import strategy.impl.Rancunier;
 import strategy.impl.Sondeur;
 
 /**
@@ -55,13 +57,15 @@ public final class PersonFactory {
 	private static List<StrategieI> getLstStrategyImpl() {
 		final List<StrategieI> lst = new ArrayList<StrategieI>();
 		lst.add(new Casanier());
-		lst.add(new CycliqueTendanceFetard());
 		lst.add(new CycliqueTendanceCasanier());
+		lst.add(new CycliqueTendanceFetard());
+		lst.add(new EasyGo());
 		lst.add(new Fetard());
 		lst.add(new Lunatique());
 		lst.add(new MajorMou());
 		lst.add(new Mefiant());
 		lst.add(new Pavlovien());
+		lst.add(new Rancunier());
 		lst.add(new Sondeur());
 		return lst;
 	}

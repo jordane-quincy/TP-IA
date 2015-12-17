@@ -11,6 +11,16 @@ import strategy.StrategieI;
  */
 public class MajorMou implements StrategieI {
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 *
+	 * <pre>
+	 * A MajorMou stay at home at first turn.
+	 * After that, he/she compute the ratio of people who go to the bar for all turn and do like the majority.
+	 * </pre>
+	 */
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
