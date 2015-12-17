@@ -31,6 +31,6 @@ public class CycliqueTendanceFetard extends Cyclique {
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> historiqueDesTours) {
-		return this.doitAllerAuBarDurantCeTour(historiqueDesTours);
+		return this.haveToGoToTheBarAtThisTurn(historiqueDesTours);
 	}
 }

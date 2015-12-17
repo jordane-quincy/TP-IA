@@ -31,7 +31,7 @@ public abstract class Cyclique implements StrategieI {
 	 * @return
 	 */
 	// used only by sub classes
-	protected boolean doitAllerAuBarDurantCeTour(
+	protected boolean haveToGoToTheBarAtThisTurn(
 			final List<Map<Person, Boolean>> turnHistoric) {
 		return turnHistoric.size() % this.i == 0;
 	}

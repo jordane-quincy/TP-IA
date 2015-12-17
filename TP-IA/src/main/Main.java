@@ -28,7 +28,7 @@ public class Main {
 			inputNbPlTurn = Integer.parseInt(args[0]);
 			inputPopulationSize = Integer.parseInt(args[1]);
 			// the bar accept 60% of the population
-			nbPlacesAvailable = Math.round(0.2f * inputPopulationSize);
+			nbPlacesAvailable = Math.round(0.6f * inputPopulationSize);
 		} catch (final NumberFormatException nfe) {
 			throw new Exception("Arguments non valides: " + nfe.getMessage());
 		}

@@ -1,12 +1,6 @@
 strategyName;pointsForStrategy;nbPersonForStrategy;ratio
-Casanier;124;16;7.75
-MajorMou;84;9;9.333333333333334
-Mefiant;130;14;9.285714285714286
-Pavlovien;13;13;1.0
-CycliqueTendanceCasanier;36;9;4.0
-CycliqueTendanceFetard;64;8;8.0
-Rancunier;99;9;11.0
-Sondeur;81;9;9.0
-EasyGo;110;10;11.0
-Lunatique;13;2;6.5
-Fetard;0;1;0.0
+EasyGo;27;3;9.0
+Fetard;25;3;8.333333333333334
+Mefiant;10;2;5.0
+Casanier;12;1;12.0
+CycliqueTendanceFetard;10;1;10.0

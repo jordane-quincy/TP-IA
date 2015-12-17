@@ -30,6 +30,6 @@ public class CycliqueTendanceCasanier extends Cyclique {
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
-		return !this.haveToGoToTheBar(turnHistoric);
+		return !this.haveToGoToTheBarAtThisTurn(turnHistoric);
 	}
 }

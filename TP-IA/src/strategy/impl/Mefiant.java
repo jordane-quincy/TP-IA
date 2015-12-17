@@ -11,6 +11,18 @@ import strategy.StrategieI;
  */
 public class Mefiant implements StrategieI {
 
+	Person personNearMe = null;
+
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A Mefiant stay at home at first turn.
+	 * After that, he/she compute the ratio of people who go to the bar for all turn and do like the majority.
+	 * </pre>
+	 */
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
@@ -21,27 +33,33 @@ public class Mefiant implements StrategieI {
 			// Stay at home at first round
 			return false;
 		} else {
-			int idOfPersonNearMe = 0;
-			if (me.getId() == 0) {
-				// l'autre == celui qui a l'id juste apres comme il n'y a
-				// personne avant
-				idOfPersonNearMe = 1;
-			} else {
-				// l'autre == celui qui a l'id juste avant
-				idOfPersonNearMe = me.getId() - 1;
-			}
+			// init the other person
+			if (this.personNearMe == null) {
+				int personNearMeId = -1;
+				if (me.getId() == 0) {
+					// l'autre == celui qui a l'id juste apres comme il n'y a
+					// personne avant
+					personNearMeId = 1;
+				} else {
+					// l'autre == celui qui a l'id juste avant
+					personNearMeId = me.getId() - 1;
+				}
 
-			boolean autreEstPartiAuBar = false;
-			final Map<Person, Boolean> tour = turnHistoric
-					.get(turnHistoric.size() - 1);
-			for (final Person i : tour.keySet()) {
-				if (i.getId() == idOfPersonNearMe) {
-					autreEstPartiAuBar = tour.get(i);
-					break;// no need to continue to loop
+				final Map<Person, Boolean> previousTurn = turnHistoric
+						.get(turnHistoric.size() - 1);
+				for (final Person other : previousTurn.keySet()) {
+					if (personNearMeId == other.getId()) {
+						// we find him !
+						this.personNearMe = other;
+						break; // no need to continue
+					}
 				}
 			}
 
-			return autreEstPartiAuBar;
+			final Map<Person, Boolean> previousTurn = turnHistoric
+					.get(turnHistoric.size() - 1);
+
+			return previousTurn.get(this.personNearMe);
 		}
 	}
 }
