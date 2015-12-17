@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import person.Person;
-import strategy.StrategieI;
 
 /**
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane

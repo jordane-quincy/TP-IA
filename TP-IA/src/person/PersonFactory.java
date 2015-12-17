@@ -15,7 +15,8 @@ import strategy.impl.MajorMou;
 import strategy.impl.Mefiant;
 import strategy.impl.Pavlovien;
 import strategy.impl.Rancunier;
-import strategy.impl.Sondeur;
+import strategy.impl.SondeurFou;
+import strategy.impl.SondeurIntelligent;
 
 /**
  * PersonFactory class, following the Factory design pattern.
@@ -66,7 +67,8 @@ public final class PersonFactory {
 		lst.add(new Mefiant());
 		lst.add(new Pavlovien());
 		lst.add(new Rancunier());
-		lst.add(new Sondeur());
+		lst.add(new SondeurFou());
+		lst.add(new SondeurIntelligent());
 		return lst;
 	}
 

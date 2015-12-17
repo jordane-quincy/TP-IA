@@ -15,7 +15,7 @@ public class CycliqueTendanceCasanier extends Cyclique {
 	 * {@inheritDoc}
 	 * </p>
 	 * A CycliqueTendanceCasanier
-	 *
+	 * 
 	 * <pre>
 	 * Example with i = 2 :
 	 * 	Turn 1 = Stay at home
@@ -30,6 +30,6 @@ public class CycliqueTendanceCasanier extends Cyclique {
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
-		return !this.haveToGoToTheBarAtThisTurn(turnHistoric);
+		return !this.haveToGoToTheBar(turnHistoric);
 	}
 }
