@@ -15,37 +15,37 @@ public class TournamentLowestStrategyToHighestStrategy implements TournamentI {
 
 	@Override
 	public void evolution(final List<Person> population,
-			final List<Map<Person, Boolean>> historiqueDesTours) {
+			final List<Map<Person, Boolean>> turnHistoric) {
 
-		final Map<Person, Boolean> resultatDernierTour = historiqueDesTours
-				.get(historiqueDesTours.size() - 1);
+		final Map<Person, Boolean> lastTurnResult = turnHistoric
+				.get(turnHistoric.size() - 1);
 
-		Person individuScoreMin = null;
-		Person individuScoreMax = null;
+		Person personMinScore = null;
+		Person personMaxScore = null;
 		// We loop over all persons
-		for (final Person curPerson : resultatDernierTour.keySet()) {
-			if (individuScoreMin == null) {
+		for (final Person currentPerson : lastTurnResult.keySet()) {
+			if (personMinScore == null) {
 				// init
-				individuScoreMin = curPerson;
+				personMinScore = currentPerson;
 			} else {
 				// else, if we find someone with a lower score : save it
-				if (curPerson.getScore() < individuScoreMin.getScore()) {
-					individuScoreMin = curPerson;
+				if (currentPerson.getScore() < personMinScore.getScore()) {
+					personMinScore = currentPerson;
 				}
 			}
 		}
 
-		for (final Person curPerson : resultatDernierTour.keySet()) {
+		for (final Person currentPerson : lastTurnResult.keySet()) {
 			// we look for the highest score with a different strategy
-			if (!curPerson.getStrategieName().equals(
-					individuScoreMin.getStrategieName())) {
-				if (individuScoreMax == null) {
+			if (!currentPerson.getStrategieName().equals(
+					personMinScore.getStrategieName())) {
+				if (personMaxScore == null) {
 					// init
-					individuScoreMax = curPerson;
+					personMaxScore = currentPerson;
 				} else {
 					// else, if we find someone with a higher score: save it
-					if (curPerson.getScore() > individuScoreMax.getScore()) {
-						individuScoreMax = curPerson;
+					if (currentPerson.getScore() > personMaxScore.getScore()) {
+						personMaxScore = currentPerson;
 					}
 				}
 			}
@@ -54,13 +54,13 @@ public class TournamentLowestStrategyToHighestStrategy implements TournamentI {
 		// avoid null pointer exception in case of all population have the
 		// same
 		// strategy
-		if (individuScoreMax != null) {
+		if (personMaxScore != null) {
 			System.out.println("\tIndividu avec le moins de points : "
-					+ individuScoreMin);
+					+ personMinScore);
 			System.out.println("\tIndividu avec le plus de points : "
-					+ individuScoreMax);
+					+ personMaxScore);
 
-			individuScoreMin.takeTheStrategieOf(individuScoreMax);
+			personMinScore.takeTheStrategieOf(personMaxScore);
 		}
 	}
 }

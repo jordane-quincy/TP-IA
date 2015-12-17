@@ -1,7 +1,9 @@
 package strategy.impl;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import person.Person;
 import strategy.StrategieI;
@@ -11,18 +13,6 @@ import strategy.StrategieI;
  */
 public class Mefiant implements StrategieI {
 
-	Person personNearMe = null;
-
-	/**
-	 * <p>
-	 * {@inheritDoc}
-	 * </p>
-	 * 
-	 * <pre>
-	 * A Mefiant stay at home at first turn.
-	 * After that, he/she compute the ratio of people who go to the bar for all turn and do like the majority.
-	 * </pre>
-	 */
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
@@ -33,33 +23,32 @@ public class Mefiant implements StrategieI {
 			// Stay at home at first round
 			return false;
 		} else {
-			// init the other person
-			if (this.personNearMe == null) {
-				int personNearMeId = -1;
-				if (me.getId() == 0) {
-					// l'autre == celui qui a l'id juste apres comme il n'y a
-					// personne avant
-					personNearMeId = 1;
-				} else {
-					// l'autre == celui qui a l'id juste avant
-					personNearMeId = me.getId() - 1;
+
+			Person other = null;
+			final Map<Person, Boolean> previousTurn = turnHistoric
+					.get(turnHistoric.size() - 1);
+			final Iterator<Entry<Person, Boolean>> it = previousTurn.entrySet()
+					.iterator();
+			final boolean isOtherFound = false;
+			while (it.hasNext() && !isOtherFound) {
+				final Person i = it.next().getKey();
+
+				// in case of the person "me" is the last of the list, the next
+				// is the first of the turn
+				if (other == null) {
+					other = i;
 				}
 
-				final Map<Person, Boolean> previousTurn = turnHistoric
-						.get(turnHistoric.size() - 1);
-				for (final Person other : previousTurn.keySet()) {
-					if (personNearMeId == other.getId()) {
-						// we find him !
-						this.personNearMe = other;
-						break; // no need to continue
-					}
+				// in other case, when we find the place of "me" during the last
+				// turn, other is the next one.
+				if (me.getId() == i.getId()) {
+					// we found himself in the previous turn
+					// now we get the next person in the turn
+					other = it.next().getKey();
 				}
 			}
 
-			final Map<Person, Boolean> previousTurn = turnHistoric
-					.get(turnHistoric.size() - 1);
-
-			return previousTurn.get(this.personNearMe);
+			return previousTurn.get(other);
 		}
 	}
 }

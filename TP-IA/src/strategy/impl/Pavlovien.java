@@ -14,38 +14,38 @@ public class Pavlovien implements StrategieI {
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
-		// Je reste chez me et ensuite je fais la même action que les autres du
+		// Je reste chez moi et ensuite je fais la même action que les autres du
 		// coup précédent
 
-		final int nbTour = turnHistoric.size();
-		if (nbTour < 1) {
+		final int nbTurn = turnHistoric.size();
+		if (nbTurn < 1) {
 			// Stay at home at first round
 			return false;
 		} else {
-			int nbInviduAuBarAuDernierTour = 0;
-			int nbInviduAuDernierTour = 0;
-			final Map<Person, Boolean> tourPrecedent = turnHistoric
-					.get(nbTour - 1);
-			for (final Person i : tourPrecedent.keySet()) {
-				final boolean estPartiAuBar = tourPrecedent.get(i);
-				if (estPartiAuBar) {
-					nbInviduAuBarAuDernierTour++;
+			int nbPersonInTheBarAtTheLastTurn = 0;
+			int nbPersonAtTheLastTurn = 0;
+			final Map<Person, Boolean> previousTurn = turnHistoric
+					.get(nbTurn - 1);
+			for (final Person i : previousTurn.keySet()) {
+				final boolean wentToTheBar = previousTurn.get(i);
+				if (wentToTheBar) {
+					nbPersonInTheBarAtTheLastTurn++;
 				}
-				nbInviduAuDernierTour++;
+				nbPersonAtTheLastTurn++;
 			}
-			final double ratioNbPersonAuBarSurNbPersonAuDernierTour = (double) nbInviduAuDernierTour
-					/ nbInviduAuBarAuDernierTour;
+			final double ratioNbPersonAtTheBarOnNbPersonAtTheLastTurn = (double) nbPersonAtTheLastTurn
+					/ nbPersonInTheBarAtTheLastTurn;
 
 			System.out
-					.print("nbInviduAuDernierTour / nbInviduAuBarAuDernierTour = "
-							+ nbInviduAuDernierTour
+					.print("nbPersonAtTheLastTurn / nbPersonInTheBarAtTheLastTurn = "
+							+ nbPersonAtTheLastTurn
 							+ "/"
-							+ nbInviduAuBarAuDernierTour + " = ");
+							+ nbPersonInTheBarAtTheLastTurn + " = ");
 			System.out.format("%.3f : ",
-					ratioNbPersonAuBarSurNbPersonAuDernierTour);
+					ratioNbPersonAtTheBarOnNbPersonAtTheLastTurn);
 			System.out
-					.println(ratioNbPersonAuBarSurNbPersonAuDernierTour >= 0.5d);
-			return ratioNbPersonAuBarSurNbPersonAuDernierTour >= 0.5d;
+					.println(ratioNbPersonAtTheBarOnNbPersonAtTheLastTurn >= 0.5d);
+			return ratioNbPersonAtTheBarOnNbPersonAtTheLastTurn >= 0.5d;
 		}
 	}
 }
