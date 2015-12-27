@@ -30,7 +30,7 @@ public class Main {
 			// the bar accept 60% of the population
 			nbPlacesAvailable = Math.round(0.6f * inputPopulationSize);
 		} catch (final NumberFormatException nfe) {
-			throw new Exception("Arguments non valides: " + nfe.getMessage());
+			throw new Exception("Arguments non valides : " + nfe.getMessage());
 		}
 
 		final Bar bar = Bar.getInstance(nbPlacesAvailable);
@@ -120,7 +120,6 @@ public class Main {
 
 	public static void checkNbInputsOrThrowException(final String[] args)
 			throws Exception {
-		// TODO: mettre les types des arguments (int)
 		final StringBuilder errorMessage = new StringBuilder();
 		if (args == null || args.length != 2) {
 			errorMessage.append("Nombre d'arguments invalide.").append("\n");

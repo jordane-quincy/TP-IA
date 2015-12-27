@@ -10,6 +10,7 @@ import strategy.impl.CycliqueTendanceCasanier;
 import strategy.impl.CycliqueTendanceFetard;
 import strategy.impl.EasyGo;
 import strategy.impl.Fetard;
+import strategy.impl.HardJoss;
 import strategy.impl.Lunatique;
 import strategy.impl.MajorMou;
 import strategy.impl.Mefiant;
@@ -62,6 +63,7 @@ public final class PersonFactory {
 		lst.add(new CycliqueTendanceFetard());
 		lst.add(new EasyGo());
 		lst.add(new Fetard());
+		lst.add(new HardJoss());
 		lst.add(new Lunatique());
 		lst.add(new MajorMou());
 		lst.add(new Mefiant());

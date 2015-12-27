@@ -26,7 +26,7 @@ public abstract class Sondeur implements StrategieI {
 			// Stay at home at first round
 			return false;
 		} else if (nbTurn <= 3) {
-			// Go to the bar at first round
+			// Go to the bar
 			return true;
 		} else {
 
@@ -44,12 +44,7 @@ public abstract class Sondeur implements StrategieI {
 
 			final double ratioNbPersonAtTheBarOnNbPersonAtThisTurn = (double) nbTotalPerson
 					/ nbTotalPersonAtTheBar;
-			System.out.print("( nbTotalPerson /  nbTotalPersonAtTheBar) = ("
-					+ nbTotalPerson + "/" + nbTotalPersonAtTheBar + ") = ");
-			System.out.format("%.3f : ",
-					ratioNbPersonAtTheBarOnNbPersonAtThisTurn);
-			System.out
-					.println(!(ratioNbPersonAtTheBarOnNbPersonAtThisTurn >= 0.5d));
+
 			return ratioNbPersonAtTheBarOnNbPersonAtThisTurn >= 0.5d;
 		}
 	}

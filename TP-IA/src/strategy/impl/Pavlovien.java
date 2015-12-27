@@ -36,15 +36,6 @@ public class Pavlovien implements StrategieI {
 			final double ratioNbPersonAtTheBarOnNbPersonAtTheLastTurn = (double) nbPersonAtTheLastTurn
 					/ nbPersonInTheBarAtTheLastTurn;
 
-			System.out
-					.print("nbPersonAtTheLastTurn / nbPersonInTheBarAtTheLastTurn = "
-							+ nbPersonAtTheLastTurn
-							+ "/"
-							+ nbPersonInTheBarAtTheLastTurn + " = ");
-			System.out.format("%.3f : ",
-					ratioNbPersonAtTheBarOnNbPersonAtTheLastTurn);
-			System.out
-					.println(ratioNbPersonAtTheBarOnNbPersonAtTheLastTurn >= 0.5d);
 			return ratioNbPersonAtTheBarOnNbPersonAtTheLastTurn >= 0.5d;
 		}
 	}

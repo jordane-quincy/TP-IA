@@ -15,7 +15,7 @@ public class MajorMou implements StrategieI {
 	 * <p>
 	 * {@inheritDoc}
 	 * </p>
-	 *
+	 * 
 	 * <pre>
 	 * A MajorMou stay at home at first turn.
 	 * After that, he/she compute the ratio of people who go to the bar for all turn and do like the majority.
@@ -24,8 +24,6 @@ public class MajorMou implements StrategieI {
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
-		// TODO Je reste chez me et ensuite je joue l'aciton que les autres ont
-		// joués majoritairement sur tous les coups précédents
 
 		final int nbTurn = turnHistoric.size();
 		if (nbTurn < 1) {
@@ -47,17 +45,7 @@ public class MajorMou implements StrategieI {
 
 			final double rationNbPersonInTheBarOnNbPersonPerTurn = (double) nbTotalPerson
 					/ nbTotalPersonInTheBar / (turnHistoric.size() + 1);
-			System.out
-					.print("( nbTotalPerson /  nbTotalPersonInTheBar) / turnHistoric.size() = ("
-							+ nbTotalPerson
-							+ "/"
-							+ nbTotalPersonInTheBar
-							+ ")/"
-							+ (turnHistoric.size() + 1) + ") = ");
-			System.out.format("%.3f : ",
-					rationNbPersonInTheBarOnNbPersonPerTurn);
-			System.out
-					.println(rationNbPersonInTheBarOnNbPersonPerTurn >= 0.5d);
+
 			return rationNbPersonInTheBarOnNbPersonPerTurn >= 0.5d;
 		}
 	}

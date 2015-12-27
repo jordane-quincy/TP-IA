@@ -16,7 +16,7 @@ public class Mefiant implements StrategieI {
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
-		// TODO je reste chez me et ensuite je joue l'action que l'autre a joué
+		// je reste chez me et ensuite je joue l'action que l'autre a joué
 
 		final int nbTurn = turnHistoric.size();
 		if (nbTurn < 1) {
@@ -48,7 +48,8 @@ public class Mefiant implements StrategieI {
 				}
 			}
 
-			return previousTurn.get(other);
+			return previousTurn == null || other == null ? false : previousTurn
+					.get(other);
 		}
 	}
 }
