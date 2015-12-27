@@ -9,7 +9,7 @@ import person.Person;
 import person.PersonFactory;
 import stats.Stats;
 import tournament.TournamentI;
-import tournament.impl.TournamentLowestStrategyToHighestStrategy;
+import tournament.impl.TournamentPersonWithLowestScoreWillBeKilled;
 import bar.Bar;
 
 /**
@@ -35,10 +35,11 @@ public class Main {
 
 		final Bar bar = Bar.getInstance(nbPlacesAvailable);
 
-		final List<Person> population = PersonFactory
+		List<Person> population = PersonFactory
 				.generatePopulation(inputPopulationSize);
 
-		final TournamentI tournament = new TournamentLowestStrategyToHighestStrategy();
+		final TournamentI tournament = new TournamentPersonWithLowestScoreWillBeKilled();// new
+																							// TournamentLowestStrategyToHighestStrategy();
 
 		final List<Map<Person, Boolean>> turnHistoric = new ArrayList<Map<Person, Boolean>>();
 		// LinkedHashMap preserve the order
@@ -46,6 +47,7 @@ public class Main {
 
 		for (int curTour = 1; curTour <= inputNbPlTurn; curTour++) {
 			bar.reset();
+			informationCurrentTurn.clear();
 
 			System.out.println("\tTour " + curTour);
 
@@ -65,7 +67,7 @@ public class Main {
 			}
 
 			if (curTour >= 5) {
-				tournament.evolution(population, turnHistoric);
+				population = tournament.evolution(population, turnHistoric);
 			}
 		}
 

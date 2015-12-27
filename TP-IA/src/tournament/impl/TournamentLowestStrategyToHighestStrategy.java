@@ -8,13 +8,13 @@ import tournament.TournamentI;
 
 /**
  * Tournoi class.
- *
+ * 
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
 public class TournamentLowestStrategyToHighestStrategy implements TournamentI {
 
 	@Override
-	public void evolution(final List<Person> population,
+	public List<Person> evolution(final List<Person> population,
 			final List<Map<Person, Boolean>> turnHistoric) {
 
 		final Map<Person, Boolean> lastTurnResult = turnHistoric
@@ -62,5 +62,7 @@ public class TournamentLowestStrategyToHighestStrategy implements TournamentI {
 
 			personMinScore.takeTheStrategieOf(personMaxScore);
 		}
+
+		return population;
 	}
 }
