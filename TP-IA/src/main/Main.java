@@ -9,6 +9,7 @@ import person.Person;
 import person.PersonFactory;
 import stats.Stats;
 import tournament.TournamentI;
+import tournament.impl.TournamentLowestStrategyToHighestStrategy;
 import tournament.impl.TournamentPersonWithLowestScoreWillBeKilled;
 import bar.Bar;
 
@@ -17,12 +18,17 @@ import bar.Bar;
  */
 public class Main {
 
+	// Constants
+	final static String MODE_ELIMINATION = "ELIMINATION";
+	final static String MODE_COPIE = "COPIE";
+
 	public static void main(final String[] args) throws Exception {
 		checkNbInputsOrThrowException(args);
 
 		int inputNbPlTurn = 0;
 		int inputPopulationSize = 0;
 		int nbPlacesAvailable = 0;
+		TournamentI tournament = null;
 
 		try {
 			inputNbPlTurn = Integer.parseInt(args[0]);
@@ -32,14 +38,28 @@ public class Main {
 		} catch (final NumberFormatException nfe) {
 			throw new Exception("Arguments non valides : " + nfe.getMessage());
 		}
+		String inputMode = null;
+		if (args.length > 2 && args[2] != null) {
+			inputMode = args[2].toUpperCase();
+			if (MODE_ELIMINATION.equals(inputMode)) {
+				tournament = new TournamentPersonWithLowestScoreWillBeKilled();
+			} else if (MODE_COPIE.equals(inputMode)) {
+				tournament = new TournamentLowestStrategyToHighestStrategy();
+			} else {
+				throw new Exception("mode saisie invalide. Mode possible : \""
+						+ MODE_ELIMINATION + "\"(par defaut) ou \""
+						+ MODE_COPIE + "\"");
+			}
+		} else {
+			// if no mode param, default :
+			inputMode = MODE_ELIMINATION;
+			tournament = new TournamentPersonWithLowestScoreWillBeKilled();
+		}
 
 		final Bar bar = Bar.getInstance(nbPlacesAvailable);
 
 		List<Person> population = PersonFactory
 				.generatePopulation(inputPopulationSize);
-
-		final TournamentI tournament = new TournamentPersonWithLowestScoreWillBeKilled();// new
-																							// TournamentLowestStrategyToHighestStrategy();
 
 		final List<Map<Person, Boolean>> turnHistoric = new ArrayList<Map<Person, Boolean>>();
 		// LinkedHashMap preserve the order
@@ -75,7 +95,7 @@ public class Main {
 
 		displayStatsPerPerson(population, turnHistoric);
 
-		Stats.logStat(population);
+		Stats.logStat(inputMode, population);
 	}
 
 	private static void displayLastTurnResult(
@@ -83,7 +103,7 @@ public class Main {
 		final Map<Person, Boolean> lastTurnResult = turnHistorique
 				.get(turnHistorique.size() - 1);
 
-		System.out.println("\tResultat du dernier tour");
+		System.out.println("\tResultat final");
 		// We loop over all persons
 		for (final Person currentPerson : lastTurnResult.keySet()) {
 			final boolean wentToTheBarThisTurn = lastTurnResult
@@ -121,11 +141,13 @@ public class Main {
 	public static void checkNbInputsOrThrowException(final String[] args)
 			throws Exception {
 		final StringBuilder errorMessage = new StringBuilder();
-		if (args == null || args.length != 2) {
+		if (args == null || args.length < 2) {
 			errorMessage.append("Nombre d'arguments invalide.").append("\n");
 			errorMessage.append("Format obligatoire :").append("\n");
-			errorMessage.append("	nbTour(int) taillePopulation(int)").append(
-					"\n");
+			errorMessage.append(
+					"	nbTour(int) taillePopulation(int) [modeTournoi(String) : \""
+							+ MODE_ELIMINATION + "\"(par defaut) ou \""
+							+ MODE_COPIE + "\" ]").append("\n");
 
 			throw new Exception(errorMessage.toString());
 		}
