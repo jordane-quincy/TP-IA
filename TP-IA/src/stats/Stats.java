@@ -28,9 +28,10 @@ public class Stats {
 	 * 
 	 * @param population
 	 *            a List of {@link Person}
+	 * @param nbTurn
 	 */
 	public static void logStat(final String tournamentMode,
-			final List<Person> population) {
+			final List<Person> population, final int nbTurn) {
 		final Map<String, StrategyScore> mapTotalScoreStrategy = new LinkedHashMap<String, StrategyScore>();
 
 		for (final Person i : population) {
@@ -50,7 +51,7 @@ public class Stats {
 		}
 
 		// After computation, write statistics in a CSV file.
-		writeCsvLog(tournamentMode, mapTotalScoreStrategy);
+		writeCsvLog(tournamentMode, mapTotalScoreStrategy, nbTurn);
 	}
 
 	/**
@@ -60,9 +61,10 @@ public class Stats {
 	 * 
 	 * @param mapStrategieScore
 	 *            the Map of {@link StrategieI} statistics
+	 * @param nbTurn
 	 */
 	private static void writeCsvLog(final String tournamentMode,
-			final Map<String, StrategyScore> mapStrategieScore) {
+			final Map<String, StrategyScore> mapStrategieScore, final int nbTurn) {
 
 		try {
 			final File csvFile = new File(CSV_FILENAME_PATH);
@@ -79,8 +81,9 @@ public class Stats {
 				writer.append("tournamentMode").append(CSV_SEPARATOR)
 						.append("strategyName").append(CSV_SEPARATOR)
 						.append("pointsForStrategy").append(CSV_SEPARATOR)
-						.append("nbPersonForStrategy").append(CSV_SEPARATOR)
-						.append("ratio").append("\n");
+						.append("nbPointByPersonByStrategy")
+						.append(CSV_SEPARATOR)
+						.append("nbPointByPersonByStrategyByTurn").append("\n");
 			}
 
 			for (final String strategyName : mapStrategieScore.keySet()) {
@@ -90,17 +93,23 @@ public class Stats {
 				final int pointsForStrategy = strategyScore.getTotalScore();
 				final int nbPersonForStrategy = strategyScore.getNbPerson() > 0 ? strategyScore
 						.getNbPerson() : 1; // avoid div by zero
-				final double ratioPointByPersonByStrategy = (double) pointsForStrategy
+				final double nbPointByPersonByStrategy = (double) pointsForStrategy
 						/ nbPersonForStrategy;
+				final double nbPointByPersonByStrategyByTurn = nbPointByPersonByStrategy
+						/ nbTurn;
 
 				// write stats
-				writer.append(tournamentMode).append(CSV_SEPARATOR)
-						.append(strategyName).append(CSV_SEPARATOR)
+				writer.append(tournamentMode)
+						.append(CSV_SEPARATOR)
+						.append(strategyName)
+						.append(CSV_SEPARATOR)
 						.append(String.valueOf(pointsForStrategy))
 						.append(CSV_SEPARATOR)
 						.append(String.valueOf(nbPersonForStrategy))
 						.append(CSV_SEPARATOR)
-						.append(String.valueOf(ratioPointByPersonByStrategy))
+						.append(String.valueOf(nbPointByPersonByStrategy))
+						.append(CSV_SEPARATOR)
+						.append(String.valueOf(nbPointByPersonByStrategyByTurn))
 						.append("\n");
 			}
 

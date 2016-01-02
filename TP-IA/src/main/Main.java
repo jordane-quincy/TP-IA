@@ -83,11 +83,17 @@ public class Main {
 
 			for (final Person i : informationCurrentTurn.keySet()) {
 				final boolean goToTheBar = informationCurrentTurn.get(i);
-				i.mettreAJourLeScore(goToTheBar, bar.isFullBar());
+				i.scoreUpdate(goToTheBar, bar.isFullBar());
 			}
 
 			if (curTour >= 5) {
-				population = tournament.evolution(population, turnHistoric);
+				// in elimination mode, if there is no more candidate to kill
+				// it's not interesting to continue
+				if (population.size() > 1) {
+					population = tournament.evolution(population, turnHistoric);
+				} else {
+					break;
+				}
 			}
 		}
 
@@ -95,7 +101,7 @@ public class Main {
 
 		displayStatsPerPerson(population, turnHistoric);
 
-		Stats.logStat(inputMode, population);
+		Stats.logStat(inputMode, population, inputNbPlTurn);
 	}
 
 	private static void displayLastTurnResult(
@@ -103,13 +109,10 @@ public class Main {
 		final Map<Person, Boolean> lastTurnResult = turnHistorique
 				.get(turnHistorique.size() - 1);
 
-		System.out.println("\tResultat final");
+		System.out.println("\tResult after last turn :");
 		// We loop over all persons
 		for (final Person currentPerson : lastTurnResult.keySet()) {
-			final boolean wentToTheBarThisTurn = lastTurnResult
-					.get(currentPerson);
-
-			System.out.println(currentPerson + ", " + wentToTheBarThisTurn);
+			System.out.println(currentPerson);
 		}
 
 	}

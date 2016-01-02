@@ -96,18 +96,18 @@ public class Person {
 	 * @param barPlein
 	 *            {@link bar.Bar#isBarPlein()}
 	 */
-	public void mettreAJourLeScore(final boolean vaAuBar, final boolean barPlein) {
-		int pointGagne = 0;
+	public void scoreUpdate(final boolean vaAuBar, final boolean barPlein) {
+		int pointEarnThisTurn = 0;
 		if (vaAuBar) {
-			pointGagne = barPlein ? 0 : 2;
+			pointEarnThisTurn = barPlein ? 0 : 2;
 		} else {
-			pointGagne = 1;
+			pointEarnThisTurn = 1;
 		}
 
-		System.out.println(this.id + " maj score : " + this.score + " + "
-				+ pointGagne);
+		System.out.println("Update score for " + this.id + " : " + this.score
+				+ " + " + pointEarnThisTurn);
 
-		this.score += pointGagne;
+		this.score += pointEarnThisTurn;
 	}
 
 	/**

@@ -1,101 +1,34 @@
-tournamentMode;strategyName;pointsForStrategy;nbPersonForStrategy;ratio
-COPIE;Lunatique;31;4;7.75
-COPIE;Pavlovien;14;2;7.0
-COPIE;HardJoss;10;1;10.0
-COPIE;Mefiant;5;1;5.0
-COPIE;CycliqueTendanceFetard;8;1;8.0
-COPIE;MajorMou;11;1;11.0
+tournamentMode;strategyName;pointsForStrategy;nbPointByPersonByStrategy;nbPointByPersonByStrategyByTrurn
 
-COPIE;EasyGo;84;6;14.0
-COPIE;CycliqueTendanceCasanier;16;1;16.0
-COPIE;Rancunier;34;2;17.0
-COPIE;Pavlovien;19;1;19.0
 
-COPIE;MajorMou;19;2;9.5
-COPIE;Mefiant;12;1;12.0
-COPIE;HardJoss;19;2;9.5
-COPIE;SondeurFou;18;2;9.0
-COPIE;Pavlovien;9;1;9.0
-COPIE;EasyGo;10;1;10.0
-COPIE;CycliqueTendanceFetard;10;1;10.0
 
-COPIE;Fetard;42;3;14.0
-COPIE;SondeurIntelligent;23;2;11.5
-COPIE;SondeurFou;13;1;13.0
-COPIE;Pavlovien;13;1;13.0
-COPIE;Casanier;12;1;12.0
-COPIE;MajorMou;12;1;12.0
-COPIE;Lunatique;10;1;10.0
+ELIMINATION;EasyGo;16;1;16.0;0.8
 
-COPIE;Pavlovien;23;2;11.5
-COPIE;Casanier;12;1;12.0
-COPIE;EasyGo;48;3;16.0
-COPIE;Mefiant;16;2;8.0
-COPIE;Lunatique;13;1;13.0
-COPIE;CycliqueTendanceCasanier;14;1;14.0
+ELIMINATION;HardJoss;9;1;9.0;0.45
 
-COPIE;EasyGo;24;2;12.0
-COPIE;HardJoss;31;3;10.333333333333334
-COPIE;MajorMou;11;1;11.0
-COPIE;Mefiant;11;1;11.0
-COPIE;Casanier;12;1;12.0
-COPIE;Fetard;12;1;12.0
-COPIE;CycliqueTendanceFetard;8;1;8.0
+ELIMINATION;EasyGo;14;1;14.0;0.7
 
-COPIE;Lunatique;50;3;16.666666666666668
-COPIE;Rancunier;18;1;18.0
-COPIE;Mefiant;36;2;18.0
-COPIE;CycliqueTendanceFetard;28;2;14.0
-COPIE;Fetard;36;2;18.0
+ELIMINATION;CycliqueTendanceFetard;16;1;16.0;0.8
 
-COPIE;EasyGo;34;3;11.333333333333334
-COPIE;Casanier;24;2;12.0
-COPIE;Lunatique;23;2;11.5
-COPIE;Fetard;14;1;14.0
-COPIE;Pavlovien;13;1;13.0
-COPIE;HardJoss;13;1;13.0
+ELIMINATION;CycliqueTendanceFetard;10;1;10.0;0.5
 
-COPIE;Lunatique;10;1;10.0
-COPIE;CycliqueTendanceFetard;8;1;8.0
-COPIE;CycliqueTendanceCasanier;24;2;12.0
-COPIE;HardJoss;26;3;8.666666666666666
-COPIE;EasyGo;10;1;10.0
-COPIE;Pavlovien;9;1;9.0
-COPIE;Fetard;10;1;10.0
+ELIMINATION;Fetard;14;1;14.0;0.7
 
-COPIE;MajorMou;31;3;10.333333333333334
-COPIE;CycliqueTendanceCasanier;10;1;10.0
-COPIE;Mefiant;9;1;9.0
-COPIE;HardJoss;22;2;11.0
-COPIE;Casanier;12;1;12.0
-COPIE;Pavlovien;11;1;11.0
-COPIE;EasyGo;12;1;12.0
+ELIMINATION;EasyGo;18;1;18.0;0.9
 
-COPIE;CycliqueTendanceFetard;270;3;90.0
-COPIE;CycliqueTendanceCasanier;200;2;100.0
-COPIE;HardJoss;183;2;91.5
-COPIE;Rancunier;283;3;94.33333333333333
-COPIE;EasyGo;300;3;100.0
-COPIE;Fetard;200;2;100.0
-COPIE;Pavlovien;297;3;99.0
-COPIE;MajorMou;197;2;98.5
+ELIMINATION;Pavlovien;16;1;16.0;0.8
 
-COPIE;EasyGo;59981;6;9996.833333333334
-COPIE;SondeurFou;30003;3;10001.0
-COPIE;Rancunier;20004;2;10002.0
-COPIE;MajorMou;36504;4;9126.0
-COPIE;HardJoss;19020;2;9510.0
-COPIE;CycliqueTendanceFetard;8594;1;8594.0
-COPIE;Lunatique;8797;1;8797.0
-COPIE;CycliqueTendanceCasanier;6520;1;6520.0
+ELIMINATION;Pavlovien;8;1;8.0;0.4
 
-COPIE;Pavlovien;199994;2;99997.0
-COPIE;SondeurFou;455460;5;91092.0
-COPIE;Fetard;399992;4;99998.0
-COPIE;Rancunier;199998;2;99999.0
-COPIE;Mefiant;199992;2;99996.0
-COPIE;HardJoss;90071;1;90071.0
-COPIE;SondeurIntelligent;199966;2;99983.0
-COPIE;EasyGo;99998;1;99998.0
-COPIE;CycliqueTendanceFetard;99998;1;99998.0
+ELIMINATION;Fetard;46;1;46.0;0.46
+
+ELIMINATION;EasyGo;48;1;48.0;0.48
+
+ELIMINATION;EasyGo;44;1;44.0;0.44
+
+ELIMINATION;Fetard;40;1;40.0;0.4
+
+ELIMINATION;EasyGo;42;1;42.0;0.42
+
+ELIMINATION;Fetard;42;1;42.0;0.42
 
