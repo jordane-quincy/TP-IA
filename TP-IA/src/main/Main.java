@@ -101,7 +101,7 @@ public class Main {
 
 		displayStatsPerPerson(population, turnHistoric);
 
-		Stats.logStat(inputMode, population, inputNbPlTurn);
+		Stats.logStat(inputMode, population, inputNbPlTurn, turnHistoric.size());
 	}
 
 	private static void displayLastTurnResult(

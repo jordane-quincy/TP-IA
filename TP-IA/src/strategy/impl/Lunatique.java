@@ -8,8 +8,6 @@ import person.Person;
 import strategy.StrategieI;
 
 /**
- * Not recommended behavior in real life : always go to the bar.
- *
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
 public class Lunatique implements StrategieI {
@@ -18,7 +16,7 @@ public class Lunatique implements StrategieI {
 	 * <p>
 	 * {@inheritDoc}
 	 * </p>
-	 *
+	 * 
 	 * <pre>
 	 * A Lunatique has 50 percent change to go to the bar.
 	 * </pre>

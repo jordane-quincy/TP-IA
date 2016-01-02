@@ -11,6 +11,16 @@ import strategy.StrategieI;
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
 public class HardJoss implements StrategieI {
+
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A HardJoss stay at home at first turn and if majority of the population go to the bar, use a 90/10 random to determine what to do.
+	 * </pre>
+	 */
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {

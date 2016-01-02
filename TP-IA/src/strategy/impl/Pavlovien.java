@@ -11,6 +11,15 @@ import strategy.StrategieI;
  */
 public class Pavlovien implements StrategieI {
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A Pavlovien stay at home and do like the majority of the previous turn.
+	 * </pre>
+	 */
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {

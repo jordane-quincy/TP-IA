@@ -13,6 +13,15 @@ import strategy.StrategieI;
  */
 public class Mefiant implements StrategieI {
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A Mefiant stay at home and go to the bar only if is neighbor was at bar last week.
+	 * </pre>
+	 */
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {

@@ -13,6 +13,15 @@ public class Rancunier implements StrategieI {
 
 	boolean hasBeenBetrayed = false;
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A Pavlovien go to the bar and continue to go to the bar until the bar is full. After that, stay at home.
+	 * </pre>
+	 */
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {

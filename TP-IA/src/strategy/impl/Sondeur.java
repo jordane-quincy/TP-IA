@@ -16,6 +16,15 @@ public abstract class Sondeur implements StrategieI {
 	public abstract boolean goToTheBar(Person me,
 			final List<Map<Person, Boolean>> turnHistoric);
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A Sondeur stay at home, then go at bar multiple time and return true if the majority of the population is at bar.
+	 * </pre>
+	 */
 	protected boolean haveToGoToTheBar(
 			final List<Map<Person, Boolean>> turnHistoric) {
 		// je reste chez me, ensuite je vais deux fois au bar. Si la majorité

@@ -8,12 +8,19 @@ import person.Person;
 import tournament.TournamentI;
 
 /**
- * Tournoi class.
- * 
  * @author DURIEZ Jean-Baptiste et QUINCY Jordane
  */
 public class TournamentPersonWithLowestScoreWillBeKilled implements TournamentI {
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * In this mode, the person with the lowest score is eliminate.
+	 * </pre>
+	 */
 	@Override
 	public List<Person> evolution(final List<Person> population,
 			final List<Map<Person, Boolean>> turnHistoric) {

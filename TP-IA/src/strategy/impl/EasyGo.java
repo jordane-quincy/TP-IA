@@ -11,6 +11,16 @@ import strategy.StrategieI;
  */
 public class EasyGo implements StrategieI {
 
+	/**
+	 * <p>
+	 * {@inheritDoc}
+	 * </p>
+	 * 
+	 * <pre>
+	 * A EasyGo stay at home at first turn and do the more interesting things.
+	 * In our implementation, it's more interesting to go to the bar if the simulation is launched by VIP.
+	 * </pre>
+	 */
 	@Override
 	public boolean goToTheBar(final Person me,
 			final List<Map<Person, Boolean>> turnHistoric) {
